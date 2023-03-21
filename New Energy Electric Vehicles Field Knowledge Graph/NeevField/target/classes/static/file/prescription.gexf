@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2014-01-30">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="modularity_class" title="Modularity Class" type="integer"></attribute>
+    </attributes><nodes><node id="30244" label="五落散">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="22"></viz:size>
+      </node><node id="31265" label="天门冬丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="31455" label="七熬丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="33512" label="瓜子散">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="30187" label="五疳丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="27"></viz:size>
+      </node><node id="30848" label="化积散">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="13"></viz:size>
+      </node><node id="30860" label="化蛊丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="31090" label="七珍丹">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="33605" label="二龙膏">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="34450" label="水蓬膏">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="30758" label="化虫丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="24"></viz:size>
+      </node><node id="30887" label="化痰玉壶丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="31358" label="天南星丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="24"></viz:size>
+      </node><node id="30228" label="五野丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="22"></viz:size>
+      </node><node id="34102" label="加味四物汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="24"></viz:size>
+      </node><node id="32735" label="加减归芍地黄汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="13"></viz:size>
+      </node><node id="33906" label="加减补阴益气汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="32785" label="加味建中汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="17"></viz:size>
+      </node><node id="34324" label="加味三白散">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="25"></viz:size>
+      </node><node id="31510" label="天雄散">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="19"></viz:size>
+      </node><node id="31963" label="木香丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="23"></viz:size>
+      </node><node id="32070" label="木香白术散">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="22"></viz:size>
+      </node><node id="32162" label="木香散">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="17"></viz:size>
+      </node><node id="32258" label="半夏汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="30652" label="内解散">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="31351" label="天竺黄散">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="18"></viz:size>
+      </node><node id="31926" label="木瓜散">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="31553" label="太乙保安膏">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="34200" label="水陆二仙丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="24"></viz:size>
+      </node><node id="30956" label="升阳化湿汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="18"></viz:size>
+      </node><node id="34048" label="玄霜">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="26"></viz:size>
+      </node><node id="33950" label="半夏利膈丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="24"></viz:size>
+      </node><node id="34242" label="水红花饮">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="31391" label="天麻丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="31402" label="天麻防风丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="31601" label="太白散">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="25"></viz:size>
+      </node><node id="32966" label="加味寿星丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="34182" label="水银丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="17"></viz:size>
+      </node><node id="34291" label="牛黄丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="30817" label="化毒膏">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="22"></viz:size>
+      </node><node id="30858" label="化淫消毒汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="12"></viz:size>
+      </node><node id="33079" label="加减八珍化毒丹">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="22"></viz:size>
+      </node><node id="30029" label="五味败毒散">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="30527" label="七宝饮">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="22"></viz:size>
+      </node><node id="32396" label="加减小柴胡汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="32772" label="加味败毒散">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="16"></viz:size>
+      </node><node id="33108" label="加味逍遥散">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="16"></viz:size>
+      </node><node id="30006" label="五味子散">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="13"></viz:size>
+      </node><node id="31360" label="天南星散">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="33024" label="二圣散">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="30176" label="五倍散">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="30215" label="五淋白浊丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="30367" label="六合回生丹">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="30658" label="凤衣散">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="16"></viz:size>
+      </node><node id="30661" label="凤凰散">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="27"></viz:size>
+      </node><node id="31221" label="双根沙皮饮">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="17"></viz:size>
+      </node><node id="31831" label="文蛤散">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="20"></viz:size>
+      </node><node id="31979" label="九味龙胆泻肝汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="27"></viz:size>
+      </node><node id="33086" label="加味解毒丹">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="33604" label="二龙丹">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="27"></viz:size>
+      </node><node id="33653" label="圣灵解毒丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="25"></viz:size>
+      </node><node id="34115" label="二灵丹">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="30990" label="升阳散火汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="31537" label="太一流金大道散">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="30944" label="升元大补汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="12"></viz:size>
+      </node><node id="34443" label="丝瓜散">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="27"></viz:size>
+      </node><node id="30068" label="五物香薷汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="34491" label="加味治中汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="30282" label="五噎散">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="16"></viz:size>
+      </node><node id="32265" label="半夏散">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="13"></viz:size>
+      </node><node id="31141" label="升麻散">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="32503" label="宁沸汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="16"></viz:size>
+      </node><node id="32740" label="加减复脉汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="34147" label="二陈平胃散">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="34206" label="水蛇丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="32346" label="加减小续命汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="18"></viz:size>
+      </node><node id="33716" label="加减续命汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="31416" label="天麻除风丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="31621" label="太和丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="31934" label="木耳豆腐煎">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="17"></viz:size>
+      </node><node id="33078" label="加减八珍汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="18"></viz:size>
+      </node><node id="33115" label="加味脏连丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="16"></viz:size>
+      </node><node id="33836" label="加减补中益气汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="33541" label="头瘟汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="18"></viz:size>
+      </node><node id="33891" label="加减败毒散">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="16"></viz:size>
+      </node><node id="31362" label="天南星煎">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="27"></viz:size>
+      </node><node id="31425" label="天麻散">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="20"></viz:size>
+      </node><node id="31662" label="巴戟丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="22"></viz:size>
+      </node><node id="31344" label="天竺牙消散">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="33494" label="圣效散">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="20"></viz:size>
+      </node><node id="34488" label="水银雷丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="30138" label="五香丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="31971" label="九制香附丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="32080" label="木香汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="12"></viz:size>
+      </node><node id="32128" label="木香饼子">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="33269" label="四制香附丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="24"></viz:size>
+      </node><node id="33601" label="二石汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="24"></viz:size>
+      </node><node id="34076" label="水木两生汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="13"></viz:size>
+      </node><node id="34617" label="止沸汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="16"></viz:size>
+      </node><node id="30523" label="七宝汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="30555" label="内补丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="20"></viz:size>
+      </node><node id="30672" label="分心气饮">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="31305" label="天仙藤汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="17"></viz:size>
+      </node><node id="31957" label="木香人参汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="30213" label="五得汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="30550" label="内灸丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="25"></viz:size>
+      </node><node id="30723" label="匀气汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="27"></viz:size>
+      </node><node id="30868" label="化滞丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="27"></viz:size>
+      </node><node id="30973" label="升阳除湿汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="31834" label="斗门散">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="31918" label="木瓜饮">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="25"></viz:size>
+      </node><node id="31992" label="九味宽中散">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="32056" label="木香化滞汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="17"></viz:size>
+      </node><node id="32074" label="木香导气汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="32157" label="木香黄连丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="20"></viz:size>
+      </node><node id="32158" label="木香黄连汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="26"></viz:size>
+      </node><node id="32172" label="木香槟榔丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="32496" label="归芍葛芩汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="23"></viz:size>
+      </node><node id="32556" label="加减胃苓汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="32741" label="加减养脏汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="23"></viz:size>
+      </node><node id="32816" label="加味香连丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="33499" label="圣散子">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="33702" label="圣功散">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="33877" label="加减泻心汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="25"></viz:size>
+      </node><node id="33883" label="加减和胃汤">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="34539" label="水煮木香丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="34702" label="二毒丸">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="25"></viz:size>
+      </node><node id="32603" label="汉防己散">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="22"></viz:size>
+      </node></nodes><edges><edge source="31265" target="30244">
+        <attvalues></attvalues>
+      </edge><edge source="30244" target="33512">
+        <attvalues></attvalues>
+      </edge><edge source="33512" target="31455">
+        <attvalues></attvalues>
+      </edge><edge source="30848" target="31090">
+        <attvalues></attvalues>
+      </edge><edge source="31090" target="34450">
+        <attvalues></attvalues>
+      </edge><edge source="34450" target="33605">
+        <attvalues></attvalues>
+      </edge><edge source="33605" target="30187">
+        <attvalues></attvalues>
+      </edge><edge source="30187" target="30860">
+        <attvalues></attvalues>
+      </edge><edge source="30758" target="30887">
+        <attvalues></attvalues>
+      </edge><edge source="30887" target="31358">
+        <attvalues></attvalues>
+      </edge><edge source="30228" target="34102">
+        <attvalues></attvalues>
+      </edge><edge source="33906" target="32735">
+        <attvalues></attvalues>
+      </edge><edge source="32785" target="34324">
+        <attvalues></attvalues>
+      </edge><edge source="32162" target="32258">
+        <attvalues></attvalues>
+      </edge><edge source="32258" target="32070">
+        <attvalues></attvalues>
+      </edge><edge source="32070" target="31963">
+        <attvalues></attvalues>
+      </edge><edge source="31926" target="31351">
+        <attvalues></attvalues>
+      </edge><edge source="31351" target="30652">
+        <attvalues></attvalues>
+      </edge><edge source="31553" target="34200">
+        <attvalues></attvalues>
+      </edge><edge source="34048" target="30956">
+        <attvalues></attvalues>
+      </edge><edge source="34242" target="31963">
+        <attvalues></attvalues>
+      </edge><edge source="31601" target="34291">
+        <attvalues></attvalues>
+      </edge><edge source="34291" target="32966">
+        <attvalues></attvalues>
+      </edge><edge source="32966" target="34182">
+        <attvalues></attvalues>
+      </edge><edge source="34182" target="31402">
+        <attvalues></attvalues>
+      </edge><edge source="31402" target="31391">
+        <attvalues></attvalues>
+      </edge><edge source="30817" target="33079">
+        <attvalues></attvalues>
+      </edge><edge source="33079" target="30858">
+        <attvalues></attvalues>
+      </edge><edge source="32772" target="33108">
+        <attvalues></attvalues>
+      </edge><edge source="33108" target="32396">
+        <attvalues></attvalues>
+      </edge><edge source="32396" target="30029">
+        <attvalues></attvalues>
+      </edge><edge source="30029" target="30527">
+        <attvalues></attvalues>
+      </edge><edge source="31360" target="33024">
+        <attvalues></attvalues>
+      </edge><edge source="33024" target="30006">
+        <attvalues></attvalues>
+      </edge><edge source="30176" target="30658">
+        <attvalues></attvalues>
+      </edge><edge source="30658" target="34115">
+        <attvalues></attvalues>
+      </edge><edge source="34115" target="33604">
+        <attvalues></attvalues>
+      </edge><edge source="33604" target="30661">
+        <attvalues></attvalues>
+      </edge><edge source="30661" target="31221">
+        <attvalues></attvalues>
+      </edge><edge source="31221" target="33653">
+        <attvalues></attvalues>
+      </edge><edge source="33653" target="30215">
+        <attvalues></attvalues>
+      </edge><edge source="30215" target="31831">
+        <attvalues></attvalues>
+      </edge><edge source="31831" target="31979">
+        <attvalues></attvalues>
+      </edge><edge source="31979" target="33086">
+        <attvalues></attvalues>
+      </edge><edge source="33086" target="30367">
+        <attvalues></attvalues>
+      </edge><edge source="31537" target="30990">
+        <attvalues></attvalues>
+      </edge><edge source="30944" target="34443">
+        <attvalues></attvalues>
+      </edge><edge source="30068" target="34491">
+        <attvalues></attvalues>
+      </edge><edge source="32162" target="32265">
+        <attvalues></attvalues>
+      </edge><edge source="32265" target="30282">
+        <attvalues></attvalues>
+      </edge><edge source="34147" target="32740">
+        <attvalues></attvalues>
+      </edge><edge source="32740" target="31141">
+        <attvalues></attvalues>
+      </edge><edge source="31141" target="32503">
+        <attvalues></attvalues>
+      </edge><edge source="32503" target="34206">
+        <attvalues></attvalues>
+      </edge><edge source="33716" target="32346">
+        <attvalues></attvalues>
+      </edge><edge source="31621" target="33078">
+        <attvalues></attvalues>
+      </edge><edge source="33078" target="31416">
+        <attvalues></attvalues>
+      </edge><edge source="31416" target="33115">
+        <attvalues></attvalues>
+      </edge><edge source="33115" target="33836">
+        <attvalues></attvalues>
+      </edge><edge source="33836" target="31934">
+        <attvalues></attvalues>
+      </edge><edge source="33891" target="33541">
+        <attvalues></attvalues>
+      </edge><edge source="31425" target="31362">
+        <attvalues></attvalues>
+      </edge><edge source="32396" target="31662">
+        <attvalues></attvalues>
+      </edge><edge source="31344" target="34291">
+        <attvalues></attvalues>
+      </edge><edge source="34291" target="31351">
+        <attvalues></attvalues>
+      </edge><edge source="33494" target="34488">
+        <attvalues></attvalues>
+      </edge><edge source="32080" target="32128">
+        <attvalues></attvalues>
+      </edge><edge source="32128" target="33601">
+        <attvalues></attvalues>
+      </edge><edge source="33601" target="31971">
+        <attvalues></attvalues>
+      </edge><edge source="31971" target="33269">
+        <attvalues></attvalues>
+      </edge><edge source="33269" target="34617">
+        <attvalues></attvalues>
+      </edge><edge source="34617" target="30138">
+        <attvalues></attvalues>
+      </edge><edge source="30138" target="32396">
+        <attvalues></attvalues>
+      </edge><edge source="32396" target="34076">
+        <attvalues></attvalues>
+      </edge><edge source="30672" target="31957">
+        <attvalues></attvalues>
+      </edge><edge source="31957" target="31305">
+        <attvalues></attvalues>
+      </edge><edge source="31305" target="30523">
+        <attvalues></attvalues>
+      </edge><edge source="30523" target="30555">
+        <attvalues></attvalues>
+      </edge><edge source="30555" target="32396">
+        <attvalues></attvalues>
+      </edge><edge source="30723" target="30213">
+        <attvalues></attvalues>
+      </edge><edge source="30213" target="32741">
+        <attvalues></attvalues>
+      </edge><edge source="32741" target="33702">
+        <attvalues></attvalues>
+      </edge><edge source="33702" target="32074">
+        <attvalues></attvalues>
+      </edge><edge source="32074" target="34539">
+        <attvalues></attvalues>
+      </edge><edge source="34539" target="32172">
+        <attvalues></attvalues>
+      </edge><edge source="32172" target="32556">
+        <attvalues></attvalues>
+      </edge><edge source="32556" target="31918">
+        <attvalues></attvalues>
+      </edge><edge source="31918" target="34702">
+        <attvalues></attvalues>
+      </edge><edge source="34702" target="32496">
+        <attvalues></attvalues>
+      </edge><edge source="32496" target="32816">
+        <attvalues></attvalues>
+      </edge><edge source="32816" target="30868">
+        <attvalues></attvalues>
+      </edge><edge source="30868" target="33877">
+        <attvalues></attvalues>
+      </edge><edge source="33877" target="30550">
+        <attvalues></attvalues>
+      </edge><edge source="30550" target="31992">
+        <attvalues></attvalues>
+      </edge><edge source="31992" target="32056">
+        <attvalues></attvalues>
+      </edge><edge source="32056" target="31834">
+        <attvalues></attvalues>
+      </edge><edge source="31834" target="33499">
+        <attvalues></attvalues>
+      </edge><edge source="33499" target="33883">
+        <attvalues></attvalues>
+      </edge><edge source="33883" target="30973">
+        <attvalues></attvalues>
+      </edge><edge source="30973" target="32157">
+        <attvalues></attvalues>
+      </edge><edge source="32157" target="32158">
+        <attvalues></attvalues>
+      </edge><edge source="32603" target="31662">
+        <attvalues></attvalues>
+      </edge></edges>  </graph>
+</gexf>

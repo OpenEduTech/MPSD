@@ -1,0 +1,59 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http:mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dhh.tcm.dao.HerbInfoMapper">
+    <resultMap id="herbInfoMapper" type="indi.zyang.neev.entity.HerbInfo">
+        <id property="herbInfoId" column="herbInfoId"/>
+    </resultMap>
+    
+    <select id="findHerbInfoByHerbInfoId" resultMap="herbInfoMapper">
+        select * from herb_info where herbInfoId = #{herbInfoId}
+    </select>
+    <select id="findHerbInfoByHerbName" resultMap="herbInfoMapper">
+        select * from herb_info
+        where herbName = #{herbName}
+        or herbAlias = #{herbName}
+        or herbAlias like concat(#{herbName},"、%")
+        or herbAlias like concat("%、",#{herbName})
+        or herbAlias like concat("%、",#{herbName},"、%")
+    </select>
+    <select id="findHerbInfoByHerbAlias" resultMap="herbInfoMapper">
+        select * from herb_info
+        where herbAlias = #{herbAlias}
+        or herbAlias like concat(#{herbAlias},"、%")
+        or herbAlias like concat("%、",#{herbAlias})
+        or herbAlias like concat("%、",#{herbAlias},"、%")
+    </select>
+    <select id="findOneHerbInfoByHerbName" resultMap="herbInfoMapper">
+        select * from herb_info
+        where herbName = #{herbName}
+    </select>
+    <select id="findHerbInfoByDiseaseId" resultMap="herbInfoMapper">
+        select * from herb_info
+        where herbInfoId in (select herbInfoId from hi_d_r where diseaseId = #{diseaseId})
+    </select>
+    <select id="findHerbInfoByBookId" resultMap="herbInfoMapper">
+        select * from herb_info
+        where herbInfoId in (select herbInfoId from hi_b_r where bookId = #{bookId})
+    </select>
+    <select id="findHerbInfoByGeographyId" resultMap="herbInfoMapper">
+        select * from herb_info
+        where herbInfoId in (select herbInfoId from hi_g_r where geographyId = #{geographyId})
+    </select>
+
+    <insert id="insertHerbInfo" parameterType="herbInfo" useGeneratedKeys="true" keyProperty="herbInfoId" keyColumn="herbInfoId">
+        insert into herb_info(herbName, herbSpellName, herbAlias, herbSource, herbOriginalForm, herbGeography, herbCharacterSmell, herbFunction, herbUsageDosage, herbMaking, herbExcerpt)
+        values(#{herbName}, #{herbSpellName}, #{herbAlias}, #{herbSource}, #{herbOriginalForm}, #{herbGeography}, #{herbCharacterSmell}, #{herbFunction}, #{herbUsageDosage}, #{herbMaking}, #{herbExcerpt})
+    </insert>
+
+    <delete id="deleteHerbInfoByHerbInfoId" parameterType="int">
+        delete from herb_info where herbInfoId = #{herbInfoId}
+    </delete>
+
+    <update id="updateHerbInfo" parameterType="herbInfo">
+        update herb_info
+        set herbName=#{herbName}, herbSpellName=#{herbSpellName}, herbAlias=#{herbAlias}, herbSource=#{herbSource}, herbOriginalForm=#{herbOriginalForm}, herbGeography=#{herbGeography}, herbCharacterSmell=#{herbCharacterSmell}, herbFunction=#{herbFunction}, herbUsageDosage=#{herbUsageDosage}, herbMaking=#{herbMaking}, herbExcerpt=#{herbExcerpt}
+        where herbInfoId=#{herbInfoId}
+    </update>
+
+</mapper>

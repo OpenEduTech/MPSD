@@ -1,0 +1,77 @@
+html,body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background: url("https://dhh-1301733196.cos.ap-nanjing.myqcloud.com/tcm/start.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+body main{
+    width: 100%;
+    height: calc(100% - 65px);
+    position: relative;
+    top: 65px;
+}
+
+main #editor-toolbar {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+}
+
+#content{
+    width: 80%;
+    margin: 0 auto;
+    height: 70%;
+    overflow: hidden;
+}
+
+#tip{
+    width: 80%;
+    margin: 0 auto;
+    height: 60px;
+    line-height: 60px;
+}
+
+.key_word{
+    color: #ff0000;
+}
+
+#button{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 4px;
+    background: #2fced4;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+#phone{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.phone{
+    margin: 0px;
+    padding: 0px;
+    border: 2px solid #2fced4;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: #fff1;
+    outline: none;
+    padding-left: 10px;
+    width: 250px;
+}
+
+.phone::placeholder{
+    font-size: 16px;
+}

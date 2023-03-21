@@ -1,0 +1,128 @@
+html,body{
+    background: url("https://dhh-1301733196.cos.ap-nanjing.myqcloud.com/tcm/start.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    width: 100%;
+    height: calc(100% - 145px);
+    position: relative;
+    top: 65px;
+    overflow-y: scroll;
+    display: flex;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+main .slide{
+    height: 100%;
+    width: 100%;
+    flex-shrink:0;
+}
+
+.abbreviation{
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    bottom: 10px;
+    justify-content: center;
+}
+
+.abbreviation .zoom{
+    height: 80px;
+    width: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition:padding 0.2s linear;
+}
+
+.abbreviation #prescription-zoom{
+    background: url("https://dhh-1301733196.cos.ap-nanjing.myqcloud.com/tcm/prescription.png") no-repeat center;
+    background-size: contain;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.abbreviation #herb-zoom{
+    background: url("https://dhh-1301733196.cos.ap-nanjing.myqcloud.com/tcm/herb.png") no-repeat center;
+    background-size: contain;
+}
+
+.abbreviation #book-zoom{
+    background: url("https://dhh-1301733196.cos.ap-nanjing.myqcloud.com/tcm/book.png") no-repeat center;
+    background-size: contain;
+}
+
+.abbreviation #disease-zoom{
+    background: url("https://dhh-1301733196.cos.ap-nanjing.myqcloud.com/tcm/disease.png") no-repeat center;
+    background-size: contain;
+}
+
+.abbreviation #geography-zoom{
+    background: url("https://dhh-1301733196.cos.ap-nanjing.myqcloud.com/tcm/geography.png") no-repeat center;
+    background-size: contain;
+}
+
+.abbreviation .zoom p{
+    width: 80px;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    line-height: 80px;
+    color: #707070;
+    transition:color 0.2s linear;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+.abbreviation #prescription-zoom p{
+    color: #000;
+}
+
+/*.abbreviation .zoom:hover{*/
+/*    padding-top: 5px;*/
+/*    padding-left: 5px;*/
+/*    padding-right: 5px;*/
+/*}*/
+
+/*.abbreviation .zoom:hover p{*/
+/*    color: #000;*/
+/*}*/
+
+.arrow-left{
+    position: absolute;
+    width: 45px;
+    height: 64px;
+    background: url("../images/arrow_left.png") no-repeat center;
+    background-size: contain;
+    left: 30px;
+    top: calc(50% - 32px);
+    z-index: 300;
+    display: none;
+    cursor: pointer;
+}
+
+.arrow-right{
+    position: absolute;
+    width: 45px;
+    height: 64px;
+    background: url("../images/arrow_right.png") no-repeat center;
+    background-size: contain;
+    right: 30px;
+    top: calc(50% - 32px);
+    z-index: 300;
+    cursor: pointer;
+}

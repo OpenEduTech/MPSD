@@ -1,0 +1,32 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http:mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dhh.tcm.dao.HerbMapper">
+    <resultMap id="herbMapper" type="indi.zyang.neev.entity.Herb">
+        <id property="herbId" column="herbId"/>
+    </resultMap>
+    <select id="findHerbByHerbId" resultMap="herbMapper">
+        select * from herb where herbId = #{herbId}
+    </select>
+    <select id="findHerbByPrescriptionInfoId" resultMap="herbMapper">
+        select * from herb where herbId in (select herbId from pi_h_r where prescriptionInfoId = #{prescriptionInfoId})
+    </select>
+    <select id="findHerbByHerbName" resultMap="herbMapper">
+        select * from herb where herbName like concat("%",#{herbName},"%")
+    </select>
+    <select id="findHerbByHerbNameAccurate" resultMap="herbMapper">
+        select * from herb where herbName = #{herbName}
+    </select>
+
+    <insert id="insertHerb" parameterType="herb" useGeneratedKeys="true" keyProperty="herbId" keyColumn="herbId">
+        insert into herb(herbName) values(#{herbName})
+    </insert>
+
+    <update id="updateHerb" parameterType="herb">
+        update herb set herbName = #{herbName} where herbId = #{herbId}
+    </update>
+
+    <delete id="deleteHerbByHerbId" parameterType="int">
+        delete from herb where herbId = #{herbId}
+    </delete>
+</mapper>

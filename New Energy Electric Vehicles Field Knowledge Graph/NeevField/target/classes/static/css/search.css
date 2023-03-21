@@ -1,0 +1,217 @@
+html,body{
+    background: url("https://dhh-1301733196.cos.ap-nanjing.myqcloud.com/tcm/start.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+main{
+    width: 100%;
+    height: calc(100% - 65px);
+    position: relative;
+    top: 65px;
+}
+
+#search_box{
+    margin: 0 auto;
+    text-align: center;
+    width: 780px;
+    padding-top: 20px;
+}
+
+.type{
+    display: flex;
+}
+
+.type li{
+    width: 130px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.type .prescription_item{
+    color: #d31b1b;
+}
+
+.type .herb_item{
+    color: #40a210;
+}
+
+.type .book_item{
+    color: #bb8816;
+}
+
+.type .disease_item{
+    color: #b84999;
+}
+
+.type .geography_item{
+    color: #6982ce;
+}
+
+.out{
+    width: 20px;
+    height: 10px;
+    position: absolute;
+    left: calc(100% / 12 - 10px);
+    top: -10px;
+    overflow: hidden;
+    transition: left 200ms;
+}
+
+.in{
+    width: 14px;
+    height: 14px;
+    background: #aaa;
+    margin: 3px;
+    transform: rotate(45deg);
+    border-top-left-radius: 2px;
+    transition: color 200ms;
+}
+
+#search_input{
+    width: 780px;
+    display: flex;
+    position: relative;
+}
+
+#search_input .search_button{
+    width: 130px;
+    transition: color 200ms;
+    line-height: 49px;
+    height: 49px;
+    cursor: pointer;
+    font-size: 22px;
+    color: #fff;
+}
+
+#search_input .search_content{
+    outline: none;
+    width: 650px;
+    padding-left: 10px;
+    transition: border-color 200ms;
+    line-height: 45px;
+    height: 45px;
+    font-size: 20px;
+    text-indent: 10px;
+    background: #ffffffa1;
+}
+
+.search_prescription .search_button{
+    background: #ff7575;
+}
+
+.search_prescription .search_content{
+    border: 2px solid #ff7575;
+}
+
+.search_prescription .out{
+    left: calc(100% / 12 - 10px);
+}
+
+.search_prescription .in{
+    background: #ff7575;
+}
+
+.search_herb .search_button{
+    background: #5ecc29;
+}
+
+.search_herb .search_content{
+    border: 2px solid #5ecc29;
+}
+
+.search_herb .out{
+    left: calc(100% / 4 - 10px);
+}
+
+.search_herb .in{
+    background: #5ecc29;
+}
+
+.search_book .search_button{
+    background: #efc463;
+}
+
+.search_book .search_content{
+    border: 2px solid #efc463;
+}
+
+.search_book .out{
+    left: calc(100% * 7 / 12 - 10px);
+}
+
+.search_book .in{
+    background: #efc463;
+}
+
+.search_disease .search_button{
+    background: #ca64ae;
+}
+
+.search_disease .search_content{
+    border: 2px solid #ca64ae;
+}
+
+.search_disease .out{
+    left: calc(100% * 5 / 12 - 10px);
+}
+
+.search_disease .in{
+    background: #ca64ae;
+}
+
+.search_geography .search_button{
+    background: #839ef0;
+}
+
+.search_geography .search_content{
+    border: 2px solid #839ef0;
+}
+
+.search_geography .out{
+    left: calc(100% * 3 / 4 - 10px);
+}
+
+.search_geography .in{
+    background: #839ef0;
+}
+
+#search_result{
+    width: 100%;
+    position: relative;
+    height: calc(100% - 123px);
+    overflow: scroll;
+    margin-top: 10px;
+}
+
+#search_result .result{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+
+#search_result .result div{
+    writing-mode:vertical-lr;
+    padding: 20px;
+    margin-bottom: 10px;
+    background: url("../images/bamboo.png") no-repeat center/contain;
+    background-size: 30px 100%;
+    cursor: pointer;
+}
+
+.key_word{
+    color: #ff0000;
+}
+
+#search_result::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}

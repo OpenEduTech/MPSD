@@ -1,0 +1,454 @@
+html,body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    width: 100%;
+    height: calc(100% - 65px);
+    position: relative;
+    top: 65px;
+    overflow-y: scroll;
+    display: flex;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
+
+.key_word{
+    color: #ff0000;
+    font-weight: 600;
+}
+
+.info2d{
+    width: 20%;
+    overflow-y: scroll;
+}
+
+.info2d::-webkit-scrollbar{
+    width: 10px;
+    height: 0px;
+}
+
+.info2d::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1);
+    background: rgba(206, 120, 0, 0.5);
+}
+
+.info2d::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: #fff;
+}
+
+.info2d .arrow-left-herb{
+    background-image: url('../images/arrow_left_black.png');
+}
+.info2d .arrow-right-herb{
+    background-image: url("../images/arrow_right_black.png");
+}
+.info2d .arrow-left{
+    background-image: url('../images/arrow_left_black.png');
+}
+.info2d .arrow-right{
+    background-image: url("../images/arrow_right_black.png");
+}
+
+#graph_canvas{
+    width: 80%;
+    position: relative;
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+}
+
+.title{
+    font-size: 20px;
+    margin: 10px;
+    margin-left: 20px;
+    color: #ce7800;
+    font-weight: 600;
+}
+.pre_index{
+    font-size: 18px;
+    margin: 10px;
+    line-height: 20px;
+    color: #ff0000;
+    cursor: pointer;
+    justify-content: space-between;
+    align-items: center;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+}
+.name{
+    width: calc(100% - 30px);
+}
+.pre{
+    height: 0px;
+    overflow: hidden;
+    transition: height 200ms;
+}
+.spr_icon{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/spread_arrow.png") no-repeat center/contain;
+    transform: rotate(-90deg);
+    transition: transform 200ms;
+}
+.error_icon{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url("../images/error.png") no-repeat center/contain;
+    margin-right: 10px;
+    display: none;
+}
+.content{
+    margin: 10px;
+    margin-left: 20px;
+    text-align: justify;
+    text-indent: 2em;
+    position: relative;
+}
+
+.content .error{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 20px;
+    background: url("../images/error.png") no-repeat center/contain;
+    cursor: pointer;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+    display: none;
+}
+
+.content:hover .error{
+    display: inline-block;
+}
+
+.info3d .location{
+    cursor: pointer;
+}
+
+.herbSource{
+    text-indent: 0em;
+}
+
+.herbGeography{
+    text-indent: 0em;
+}
+
+.hidden-text{
+    display: flex;
+    margin: 5px;
+}
+
+.point{
+    display: block;
+    width: 12px;
+    height: 12px;
+    margin: auto 0px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.tip-text{
+    display: block;
+    font-family: Microsoft YaHei;
+    font-size: 14px;
+    line-height: 14px;
+}
+
+.book_prescription{
+    position: relative;
+}
+
+.book_herb{
+    position: relative;
+}
+
+.groups_pre{
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.group_pre{
+    width: 100%;
+    flex-shrink:0;
+}
+
+.groups_herb{
+    display: flex;
+    position: relative;
+    width: 100%;
+    overflow-x: scroll;
+}
+
+.group_herb{
+    width: 100%;
+    flex-shrink:0;
+}
+
+.arrow-left{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url("../images/arrow_left_black.png") no-repeat center;
+    background-size: contain;
+    left: 5px;
+    bottom: -30px;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.arrow-right{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url("../images/arrow_right_black.png") no-repeat center;
+    background-size: contain;
+    right: 5px;
+    z-index: 300;
+    bottom: -30px;
+    cursor: pointer;
+}
+
+.prescription-page{
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    left: calc(50% - 10px);
+}
+
+.arrow-left-herb{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url("../images/arrow_left_black.png") no-repeat center;
+    background-size: contain;
+    left: 5px;
+    bottom: -30px;
+    z-index: 300;
+    cursor: pointer;
+}
+
+.arrow-right-herb{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: url("../images/arrow_right_black.png") no-repeat center;
+    background-size: contain;
+    right: 5px;
+    z-index: 300;
+    bottom: -30px;
+    cursor: pointer;
+}
+
+.herb-page{
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    left: calc(50% - 10px);
+}
+
+.prescription_groups{
+    margin-left: 10px;
+}
+.herb_groups{
+    margin-left: 10px;
+}
+#graph_mode{
+    position: absolute;
+    bottom: 10px;
+    display: flex;
+    left: calc(50% - 101px);
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #03A9F4;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.mode{
+    color: #818181;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.select_mode{
+    color: #03A9F4;
+}
+
+.book_herb{
+    margin-bottom: 50px;
+}
+
+#container_3d{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 0px;
+    background: #000011;
+    overflow: hidden;
+}
+
+#change_mode{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    background: url("../images/3d.svg") no-repeat center/contain;
+}
+
+.scene-nav-info{
+    display: none;
+}
+
+.info3d{
+    color: white;
+    overflow-y: scroll;
+}
+.info3d::-webkit-scrollbar{
+    width: 10px;
+    height: 0px;
+}
+
+.info3d::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    -webkit-box-shadow: rgba(0, 0, 0, 1);
+    background: #ffffff;
+}
+
+.info3d::-webkit-scrollbar-track{
+    border-radius: 10px;
+    background: #000011;
+}
+
+.info3d .title{
+    color: #64c8cd;
+}
+.info3d .pre_index{
+    color: #42d8be;
+}
+.info3d .spr_icon{
+    background-image: url("../images/spread_arrow_white.png");
+}
+.info3d .arrow-left-herb{
+    background-image: url('../images/arrow_left_white.png');
+}
+.info3d .arrow-right-herb{
+    background-image: url("../images/arrow_right_white.png");
+}
+.info3d .arrow-left{
+    background-image: url('../images/arrow_left_white.png');
+}
+.info3d .arrow-right{
+    background-image: url("../images/arrow_right_white.png");
+}
+
+#category_3d{
+    position: absolute;
+    top: 21px;
+    right: 15px;
+    display: none;
+}
+
+#category_3d ul li{
+    height: 28px;
+}
+
+#category_3d ul li div{
+    font-family: Microsoft YaHei;
+    font-size: 16px;
+    display: flex;
+    color: #fff;
+}
+
+#category_3d ul li div div:first-child{
+    width: 25px;
+    height: 14px;
+    margin-top: 6px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+#category_3d ul li .prescription_category{
+    background: #d74848;
+}
+
+#category_3d ul li .herb_category{
+    background: #68b344;
+}
+
+#category_3d ul li .disease_category{
+    background: #c74ca6;
+}
+
+#category_3d ul li .book_category{
+    background: #cb9c32;
+}
+
+#category_3d ul li .geography_category{
+    background: #5470c6;
+}
+
+#loading_page{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: #aaaaaa61;
+    color: #fff;
+    display: none;
+}
+
+.loading{
+    display: flex;
+    width: 150px;
+    height: 30px;
+    margin: 0 auto;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+@-webkit-keyframes rotation {
+    from {
+        -webkit-transform: rotate(0deg);
+    }to{
+         -webkit-transform: rotate(360deg);
+     }
+}
+
+.loading_img{
+    width: 22px;
+    height: 22px;
+    background: url(../images/loading.svg) no-repeat center/contain;
+
+    -webkit-transform: rotate(360deg);
+    animation: rotation 1.5s linear infinite;
+    -moz-animation: rotation 1.5s linear infinite;
+    -webkit-animation: rotation 1.5s linear infinite;
+    -o-animation: rotation 1.5s linear infinite;
+}

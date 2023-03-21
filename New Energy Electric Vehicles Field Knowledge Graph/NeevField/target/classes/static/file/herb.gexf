@@ -1,0 +1,1183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2014-01-30">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="modularity_class" title="Modularity Class" type="integer"></attribute>
+    </attributes><nodes><node id="1196" label="京墨">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="5594" label="朱砂">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="3049" label="熊胆">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="26"></viz:size>
+      </node><node id="3135" label="牛黄">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="23"></viz:size>
+      </node><node id="1037" label="雄黄">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="26"></viz:size>
+      </node><node id="4152" label="麝香">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="720" label="甘草">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="1990" label="生姜">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="5576" label="缩砂">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="1991" label="胡椒">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="4203" label="草果">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="20"></viz:size>
+      </node><node id="4938" label="大戟">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="17"></viz:size>
+      </node><node id="2672" label="巴豆">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="395" label="猪牙皂荚">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="13"></viz:size>
+      </node><node id="4165" label="甘遂">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="13"></viz:size>
+      </node><node id="956" label="芫花">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="17"></viz:size>
+      </node><node id="5089" label="丁香">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="23"></viz:size>
+      </node><node id="1332" label="乳香">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="27"></viz:size>
+      </node><node id="4069" label="木香">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="5019" label="沙苑蒺藜">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="12"></viz:size>
+      </node><node id="4214" label="舶上茴香">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="1972" label="蛤蚧">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="3460" label="血竭">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="19"></viz:size>
+      </node><node id="2595" label="黑牵牛">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="13"></viz:size>
+      </node><node id="2559" label="当归">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="5614" label="桂心">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="27"></viz:size>
+      </node><node id="2585" label="槟榔">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="24"></viz:size>
+      </node><node id="242" label="甘松香">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="23"></viz:size>
+      </node><node id="2210" label="白芷">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="26"></viz:size>
+      </node><node id="5225" label="藿香">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="4565" label="零陵香">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="1801" label="青木香">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="2766" label="香附子">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="18"></viz:size>
+      </node><node id="3141" label="升麻">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="26"></viz:size>
+      </node><node id="4072" label="吴茱萸">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="17"></viz:size>
+      </node><node id="1967" label="干姜">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="27"></viz:size>
+      </node><node id="1015" label="桃仁">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="13"></viz:size>
+      </node><node id="3188" label="槟榔仁">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="3994" label="沉香">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="19"></viz:size>
+      </node><node id="3874" label="熏陆香">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="1928" label="犀角">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="4965" label="诃黎勒皮">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="23"></viz:size>
+      </node><node id="3531" label="豆蔻">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="18"></viz:size>
+      </node><node id="1585" label="附子">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="22"></viz:size>
+      </node><node id="1821" label="鬼箭羽">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="4044" label="大青">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="13"></viz:size>
+      </node><node id="5502" label="大黄">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="26"></viz:size>
+      </node><node id="5263" label="干葛">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="5267" label="干蓝">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="23"></viz:size>
+      </node><node id="3527" label="栀子仁">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="4810" label="栝楼">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="18"></viz:size>
+      </node><node id="4876" label="沉水香">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="4788" label="石膏">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="4308" label="肉桂">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="19"></viz:size>
+      </node><node id="3225" label="芎">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="3734" label="芒消">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="887" label="茯苓">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="24"></viz:size>
+      </node><node id="2630" label="茵陈">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="12"></viz:size>
+      </node><node id="3516" label="蜀升麻">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="5045" label="连翘">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="5285" label="黄芩">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="19"></viz:size>
+      </node><node id="205" label="人参">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="3762" label="侧子">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="4668" label="厚朴">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="20"></viz:size>
+      </node><node id="5188" label="熟干地黄">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="49" label="白芍药">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="24"></viz:size>
+      </node><node id="4821" label="白茯苓">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="25"></viz:size>
+      </node><node id="799" label="石长生">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="649" label="续断">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="19"></viz:size>
+      </node><node id="2778" label="虎胫骨">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="24"></viz:size>
+      </node><node id="259" label="败酱">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="13"></viz:size>
+      </node><node id="2985" label="鹿角屑">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="18"></viz:size>
+      </node><node id="2527" label="半夏">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="17"></viz:size>
+      </node><node id="611" label="枳壳">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="26"></viz:size>
+      </node><node id="1880" label="桂">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="2267" label="牛膝">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="2485" label="白檀香">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="2050" label="肉豆蔻">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="249" label="茴香子">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="22"></viz:size>
+      </node><node id="721" label="荜拔">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="25"></viz:size>
+      </node><node id="4016" label="荜澄茄">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="19"></viz:size>
+      </node><node id="962" label="葛根">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="3812" label="葛花">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="16"></viz:size>
+      </node><node id="3709" label="蓬莪术">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="855" label="赤小豆花">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="18"></viz:size>
+      </node><node id="2872" label="赤茯苓">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="14"></viz:size>
+      </node><node id="5090" label="青橘皮">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="23"></viz:size>
+      </node><node id="3831" label="犀角屑">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="22"></viz:size>
+      </node><node id="5092" label="羚羊角屑">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="16"></viz:size>
+      </node><node id="672" label="鬼臼">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="27"></viz:size>
+      </node><node id="3075" label="仁蓼">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="2641" label="吴蓝叶">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="1573" label="栀子">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="12"></viz:size>
+      </node><node id="4863" label="芍药">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="22"></viz:size>
+      </node><node id="278" label="苏合香">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="2551" label="防风">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="12"></viz:size>
+      </node><node id="367" label="鸡舌香">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="27"></viz:size>
+      </node><node id="1532" label="黄耆">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="2512" label="黄连">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="282" label="苏">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="20"></viz:size>
+      </node><node id="2695" label="升药底">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="18"></viz:size>
+      </node><node id="1871" label="大风子肉">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="4880" label="杏仁">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="12"></viz:size>
+      </node><node id="3289" label="樟冰">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="15"></viz:size>
+      </node><node id="5585" label="花椒">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="19"></viz:size>
+      </node><node id="4134" label="蛇床子">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="24"></viz:size>
+      </node><node id="93" label="西丁">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="1513" label="黄柏">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="11"></viz:size>
+      </node><node id="2308" label="五灵脂">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="26"></viz:size>
+      </node><node id="3571" label="白丑">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="2136" label="香附">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="24"></viz:size>
+      </node><node id="1624" label="黑丑">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="20"></viz:size>
+      </node><node id="4698" label="广木香">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="19"></viz:size>
+      </node><node id="315" label="檀香">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="3656" label="降香">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="13"></viz:size>
+      </node><node id="198" label="牡丹">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="25"></viz:size>
+      </node><node id="4195" label="僵蚕">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="1088" label="冰">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="26"></viz:size>
+      </node><node id="72" label="前胡">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="3125" label="北细辛">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="23"></viz:size>
+      </node><node id="2499" label="南星">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="16"></viz:size>
+      </node><node id="545" label="天麻">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="2590" label="川芎">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="23"></viz:size>
+      </node><node id="4570" label="独活">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="20"></viz:size>
+      </node><node id="2664" label="玉桂">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="12"></viz:size>
+      </node><node id="4383" label="白术">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="17"></viz:size>
+      </node><node id="2051" label="白豆蔻">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="4599" label="砂仁">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10"></viz:size>
+      </node><node id="1313" label="羌活">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="19"></viz:size>
+      </node><node id="5250" label="良姜">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="28"></viz:size>
+      </node><node id="1907" label="苍术">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="4637" label="苏叶">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="19"></viz:size>
+      </node><node id="4562" label="荆芥">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node><node id="109" label="薄荷">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="17"></viz:size>
+      </node><node id="3500" label="陈皮">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="13"></viz:size>
+      </node><node id="993" label="诃黎勒">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="29"></viz:size>
+      </node></nodes><edges><edge source="1196" target="5594">
+        <attvalues></attvalues>
+      </edge><edge source="5594" target="3049">
+        <attvalues></attvalues>
+      </edge><edge source="3049" target="3135">
+        <attvalues></attvalues>
+      </edge><edge source="3135" target="1037">
+        <attvalues></attvalues>
+      </edge><edge source="1037" target="4152">
+        <attvalues></attvalues>
+      </edge><edge source="720" target="1990">
+        <attvalues></attvalues>
+      </edge><edge source="1990" target="5576">
+        <attvalues></attvalues>
+      </edge><edge source="5576" target="1991">
+        <attvalues></attvalues>
+      </edge><edge source="1991" target="4203">
+        <attvalues></attvalues>
+      </edge><edge source="4938" target="2672">
+        <attvalues></attvalues>
+      </edge><edge source="2672" target="395">
+        <attvalues></attvalues>
+      </edge><edge source="395" target="4165">
+        <attvalues></attvalues>
+      </edge><edge source="4165" target="1991">
+        <attvalues></attvalues>
+      </edge><edge source="1991" target="956">
+        <attvalues></attvalues>
+      </edge><edge source="5089" target="1332">
+        <attvalues></attvalues>
+      </edge><edge source="1332" target="4069">
+        <attvalues></attvalues>
+      </edge><edge source="4069" target="5019">
+        <attvalues></attvalues>
+      </edge><edge source="5019" target="4214">
+        <attvalues></attvalues>
+      </edge><edge source="4214" target="1972">
+        <attvalues></attvalues>
+      </edge><edge source="1972" target="3460">
+        <attvalues></attvalues>
+      </edge><edge source="3460" target="4152">
+        <attvalues></attvalues>
+      </edge><edge source="4152" target="2595">
+        <attvalues></attvalues>
+      </edge><edge source="5089" target="2559">
+        <attvalues></attvalues>
+      </edge><edge source="2559" target="5614">
+        <attvalues></attvalues>
+      </edge><edge source="5614" target="2585">
+        <attvalues></attvalues>
+      </edge><edge source="2585" target="242">
+        <attvalues></attvalues>
+      </edge><edge source="242" target="2210">
+        <attvalues></attvalues>
+      </edge><edge source="2210" target="5225">
+        <attvalues></attvalues>
+      </edge><edge source="5225" target="4565">
+        <attvalues></attvalues>
+      </edge><edge source="4565" target="1801">
+        <attvalues></attvalues>
+      </edge><edge source="1801" target="2766">
+        <attvalues></attvalues>
+      </edge><edge source="2766" target="4152">
+        <attvalues></attvalues>
+      </edge><edge source="3141" target="4072">
+        <attvalues></attvalues>
+      </edge><edge source="4072" target="2672">
+        <attvalues></attvalues>
+      </edge><edge source="2672" target="1967">
+        <attvalues></attvalues>
+      </edge><edge source="1967" target="2559">
+        <attvalues></attvalues>
+      </edge><edge source="2559" target="5594">
+        <attvalues></attvalues>
+      </edge><edge source="5594" target="5614">
+        <attvalues></attvalues>
+      </edge><edge source="5614" target="1015">
+        <attvalues></attvalues>
+      </edge><edge source="1015" target="3188">
+        <attvalues></attvalues>
+      </edge><edge source="3188" target="3994">
+        <attvalues></attvalues>
+      </edge><edge source="3994" target="3874">
+        <attvalues></attvalues>
+      </edge><edge source="3874" target="3135">
+        <attvalues></attvalues>
+      </edge><edge source="3135" target="1928">
+        <attvalues></attvalues>
+      </edge><edge source="1928" target="720">
+        <attvalues></attvalues>
+      </edge><edge source="720" target="4965">
+        <attvalues></attvalues>
+      </edge><edge source="4965" target="3531">
+        <attvalues></attvalues>
+      </edge><edge source="3531" target="1585">
+        <attvalues></attvalues>
+      </edge><edge source="1585" target="1037">
+        <attvalues></attvalues>
+      </edge><edge source="1037" target="1801">
+        <attvalues></attvalues>
+      </edge><edge source="1801" target="1821">
+        <attvalues></attvalues>
+      </edge><edge source="1821" target="4152">
+        <attvalues></attvalues>
+      </edge><edge source="5089" target="4044">
+        <attvalues></attvalues>
+      </edge><edge source="4044" target="5502">
+        <attvalues></attvalues>
+      </edge><edge source="5502" target="2672">
+        <attvalues></attvalues>
+      </edge><edge source="2672" target="5263">
+        <attvalues></attvalues>
+      </edge><edge source="5263" target="5267">
+        <attvalues></attvalues>
+      </edge><edge source="5267" target="5594">
+        <attvalues></attvalues>
+      </edge><edge source="5594" target="3527">
+        <attvalues></attvalues>
+      </edge><edge source="3527" target="4810">
+        <attvalues></attvalues>
+      </edge><edge source="4810" target="4876">
+        <attvalues></attvalues>
+      </edge><edge source="4876" target="3874">
+        <attvalues></attvalues>
+      </edge><edge source="3874" target="1928">
+        <attvalues></attvalues>
+      </edge><edge source="1928" target="4788">
+        <attvalues></attvalues>
+      </edge><edge source="4788" target="4308">
+        <attvalues></attvalues>
+      </edge><edge source="4308" target="3225">
+        <attvalues></attvalues>
+      </edge><edge source="3225" target="3734">
+        <attvalues></attvalues>
+      </edge><edge source="3734" target="887">
+        <attvalues></attvalues>
+      </edge><edge source="887" target="2630">
+        <attvalues></attvalues>
+      </edge><edge source="2630" target="3516">
+        <attvalues></attvalues>
+      </edge><edge source="3516" target="5045">
+        <attvalues></attvalues>
+      </edge><edge source="5045" target="1801">
+        <attvalues></attvalues>
+      </edge><edge source="1801" target="4152">
+        <attvalues></attvalues>
+      </edge><edge source="4152" target="5285">
+        <attvalues></attvalues>
+      </edge><edge source="5089" target="205">
+        <attvalues></attvalues>
+      </edge><edge source="205" target="3762">
+        <attvalues></attvalues>
+      </edge><edge source="3762" target="4668">
+        <attvalues></attvalues>
+      </edge><edge source="4668" target="4069">
+        <attvalues></attvalues>
+      </edge><edge source="4069" target="3994">
+        <attvalues></attvalues>
+      </edge><edge source="3994" target="3874">
+        <attvalues></attvalues>
+      </edge><edge source="3874" target="5188">
+        <attvalues></attvalues>
+      </edge><edge source="5188" target="49">
+        <attvalues></attvalues>
+      </edge><edge source="49" target="4821">
+        <attvalues></attvalues>
+      </edge><edge source="4821" target="799">
+        <attvalues></attvalues>
+      </edge><edge source="799" target="649">
+        <attvalues></attvalues>
+      </edge><edge source="649" target="5225">
+        <attvalues></attvalues>
+      </edge><edge source="5225" target="2778">
+        <attvalues></attvalues>
+      </edge><edge source="2778" target="259">
+        <attvalues></attvalues>
+      </edge><edge source="259" target="2985">
+        <attvalues></attvalues>
+      </edge><edge source="5089" target="205">
+        <attvalues></attvalues>
+      </edge><edge source="205" target="2527">
+        <attvalues></attvalues>
+      </edge><edge source="2527" target="4069">
+        <attvalues></attvalues>
+      </edge><edge source="4069" target="611">
+        <attvalues></attvalues>
+      </edge><edge source="611" target="1880">
+        <attvalues></attvalues>
+      </edge><edge source="1880" target="2585">
+        <attvalues></attvalues>
+      </edge><edge source="2585" target="3994">
+        <attvalues></attvalues>
+      </edge><edge source="3994" target="2267">
+        <attvalues></attvalues>
+      </edge><edge source="2267" target="720">
+        <attvalues></attvalues>
+      </edge><edge source="720" target="2485">
+        <attvalues></attvalues>
+      </edge><edge source="2485" target="2210">
+        <attvalues></attvalues>
+      </edge><edge source="2210" target="5576">
+        <attvalues></attvalues>
+      </edge><edge source="5576" target="2050">
+        <attvalues></attvalues>
+      </edge><edge source="2050" target="1991">
+        <attvalues></attvalues>
+      </edge><edge source="1991" target="249">
+        <attvalues></attvalues>
+      </edge><edge source="249" target="721">
+        <attvalues></attvalues>
+      </edge><edge source="721" target="4016">
+        <attvalues></attvalues>
+      </edge><edge source="4016" target="962">
+        <attvalues></attvalues>
+      </edge><edge source="962" target="3812">
+        <attvalues></attvalues>
+      </edge><edge source="3812" target="3709">
+        <attvalues></attvalues>
+      </edge><edge source="3709" target="855">
+        <attvalues></attvalues>
+      </edge><edge source="855" target="2872">
+        <attvalues></attvalues>
+      </edge><edge source="2872" target="5090">
+        <attvalues></attvalues>
+      </edge><edge source="5090" target="4152">
+        <attvalues></attvalues>
+      </edge><edge source="5089" target="3141">
+        <attvalues></attvalues>
+      </edge><edge source="3141" target="5502">
+        <attvalues></attvalues>
+      </edge><edge source="5502" target="3527">
+        <attvalues></attvalues>
+      </edge><edge source="3527" target="3994">
+        <attvalues></attvalues>
+      </edge><edge source="3994" target="3874">
+        <attvalues></attvalues>
+      </edge><edge source="3874" target="3831">
+        <attvalues></attvalues>
+      </edge><edge source="3831" target="5092">
+        <attvalues></attvalues>
+      </edge><edge source="5092" target="3734">
+        <attvalues></attvalues>
+      </edge><edge source="3734" target="1801">
+        <attvalues></attvalues>
+      </edge><edge source="1801" target="672">
+        <attvalues></attvalues>
+      </edge><edge source="672" target="4152">
+        <attvalues></attvalues>
+      </edge><edge source="4152" target="5285">
+        <attvalues></attvalues>
+      </edge><edge source="3075" target="3141">
+        <attvalues></attvalues>
+      </edge><edge source="3141" target="2641">
+        <attvalues></attvalues>
+      </edge><edge source="2641" target="5502">
+        <attvalues></attvalues>
+      </edge><edge source="5502" target="2672">
+        <attvalues></attvalues>
+      </edge><edge source="2672" target="2559">
+        <attvalues></attvalues>
+      </edge><edge source="2559" target="1573">
+        <attvalues></attvalues>
+      </edge><edge source="1573" target="3994">
+        <attvalues></attvalues>
+      </edge><edge source="3994" target="3831">
+        <attvalues></attvalues>
+      </edge><edge source="3831" target="720">
+        <attvalues></attvalues>
+      </edge><edge source="720" target="4863">
+        <attvalues></attvalues>
+      </edge><edge source="4863" target="278">
+        <attvalues></attvalues>
+      </edge><edge source="278" target="2551">
+        <attvalues></attvalues>
+      </edge><edge source="2551" target="1801">
+        <attvalues></attvalues>
+      </edge><edge source="1801" target="367">
+        <attvalues></attvalues>
+      </edge><edge source="367" target="4152">
+        <attvalues></attvalues>
+      </edge><edge source="4152" target="1532">
+        <attvalues></attvalues>
+      </edge><edge source="1532" target="5285">
+        <attvalues></attvalues>
+      </edge><edge source="5285" target="2512">
+        <attvalues></attvalues>
+      </edge><edge source="205" target="2641">
+        <attvalues></attvalues>
+      </edge><edge source="2641" target="5502">
+        <attvalues></attvalues>
+      </edge><edge source="5502" target="4069">
+        <attvalues></attvalues>
+      </edge><edge source="4069" target="3527">
+        <attvalues></attvalues>
+      </edge><edge source="3527" target="3994">
+        <attvalues></attvalues>
+      </edge><edge source="3994" target="5188">
+        <attvalues></attvalues>
+      </edge><edge source="5188" target="1928">
+        <attvalues></attvalues>
+      </edge><edge source="1928" target="49">
+        <attvalues></attvalues>
+      </edge><edge source="49" target="4821">
+        <attvalues></attvalues>
+      </edge><edge source="4821" target="282">
+        <attvalues></attvalues>
+      </edge><edge source="282" target="367">
+        <attvalues></attvalues>
+      </edge><edge source="367" target="4152">
+        <attvalues></attvalues>
+      </edge><edge source="2695" target="1871">
+        <attvalues></attvalues>
+      </edge><edge source="1871" target="5502">
+        <attvalues></attvalues>
+      </edge><edge source="5502" target="4880">
+        <attvalues></attvalues>
+      </edge><edge source="4880" target="3289">
+        <attvalues></attvalues>
+      </edge><edge source="3289" target="5585">
+        <attvalues></attvalues>
+      </edge><edge source="5585" target="4134">
+        <attvalues></attvalues>
+      </edge><edge source="4134" target="93">
+        <attvalues></attvalues>
+      </edge><edge source="93" target="1513">
+        <attvalues></attvalues>
+      </edge><edge source="2308" target="3994">
+        <attvalues></attvalues>
+      </edge><edge source="3994" target="3571">
+        <attvalues></attvalues>
+      </edge><edge source="3571" target="2136">
+        <attvalues></attvalues>
+      </edge><edge source="2136" target="1624">
+        <attvalues></attvalues>
+      </edge><edge source="4698" target="315">
+        <attvalues></attvalues>
+      </edge><edge source="315" target="3994">
+        <attvalues></attvalues>
+      </edge><edge source="3994" target="4308">
+        <attvalues></attvalues>
+      </edge><edge source="4308" target="3656">
+        <attvalues></attvalues>
+      </edge><edge source="3141" target="5502">
+        <attvalues></attvalues>
+      </edge><edge source="5502" target="2559">
+        <attvalues></attvalues>
+      </edge><edge source="2559" target="5594">
+        <attvalues></attvalues>
+      </edge><edge source="5594" target="3874">
+        <attvalues></attvalues>
+      </edge><edge source="3874" target="198">
+        <attvalues></attvalues>
+      </edge><edge source="198" target="5225">
+        <attvalues></attvalues>
+      </edge><edge source="5225" target="1037">
+        <attvalues></attvalues>
+      </edge><edge source="1037" target="1801">
+        <attvalues></attvalues>
+      </edge><edge source="1801" target="672">
+        <attvalues></attvalues>
+      </edge><edge source="672" target="367">
+        <attvalues></attvalues>
+      </edge><edge source="5089" target="1332">
+        <attvalues></attvalues>
+      </edge><edge source="1332" target="4195">
+        <attvalues></attvalues>
+      </edge><edge source="4195" target="1088">
+        <attvalues></attvalues>
+      </edge><edge source="1088" target="72">
+        <attvalues></attvalues>
+      </edge><edge source="72" target="3125">
+        <attvalues></attvalues>
+      </edge><edge source="3125" target="2499">
+        <attvalues></attvalues>
+      </edge><edge source="2499" target="4668">
+        <attvalues></attvalues>
+      </edge><edge source="4668" target="545">
+        <attvalues></attvalues>
+      </edge><edge source="545" target="2590">
+        <attvalues></attvalues>
+      </edge><edge source="2590" target="1967">
+        <attvalues></attvalues>
+      </edge><edge source="1967" target="4069">
+        <attvalues></attvalues>
+      </edge><edge source="4069" target="5594">
+        <attvalues></attvalues>
+      </edge><edge source="5594" target="611">
+        <attvalues></attvalues>
+      </edge><edge source="611" target="315">
+        <attvalues></attvalues>
+      </edge><edge source="315" target="3994">
+        <attvalues></attvalues>
+      </edge><edge source="3994" target="4570">
+        <attvalues></attvalues>
+      </edge><edge source="4570" target="2664">
+        <attvalues></attvalues>
+      </edge><edge source="2664" target="4383">
+        <attvalues></attvalues>
+      </edge><edge source="4383" target="2210">
+        <attvalues></attvalues>
+      </edge><edge source="2210" target="2051">
+        <attvalues></attvalues>
+      </edge><edge source="2051" target="4599">
+        <attvalues></attvalues>
+      </edge><edge source="4599" target="1313">
+        <attvalues></attvalues>
+      </edge><edge source="1313" target="5250">
+        <attvalues></attvalues>
+      </edge><edge source="5250" target="1907">
+        <attvalues></attvalues>
+      </edge><edge source="1907" target="4637">
+        <attvalues></attvalues>
+      </edge><edge source="4637" target="887">
+        <attvalues></attvalues>
+      </edge><edge source="887" target="4562">
+        <attvalues></attvalues>
+      </edge><edge source="4562" target="721">
+        <attvalues></attvalues>
+      </edge><edge source="721" target="109">
+        <attvalues></attvalues>
+      </edge><edge source="109" target="2551">
+        <attvalues></attvalues>
+      </edge><edge source="2551" target="1585">
+        <attvalues></attvalues>
+      </edge><edge source="1585" target="3500">
+        <attvalues></attvalues>
+      </edge><edge source="3500" target="2136">
+        <attvalues></attvalues>
+      </edge><edge source="2136" target="4152">
+        <attvalues></attvalues>
+      </edge><edge source="5089" target="1332">
+        <attvalues></attvalues>
+      </edge><edge source="1332" target="4668">
+        <attvalues></attvalues>
+      </edge><edge source="4668" target="1967">
+        <attvalues></attvalues>
+      </edge><edge source="1967" target="4069">
+        <attvalues></attvalues>
+      </edge><edge source="4069" target="3994">
+        <attvalues></attvalues>
+      </edge><edge source="3994" target="720">
+        <attvalues></attvalues>
+      </edge><edge source="720" target="2050">
+        <attvalues></attvalues>
+      </edge><edge source="2050" target="3225">
+        <attvalues></attvalues>
+      </edge><edge source="3225" target="993">
+        <attvalues></attvalues>
+      </edge><edge source="993" target="367">
+        <attvalues></attvalues>
+      </edge><edge source="5089" target="2559">
+        <attvalues></attvalues>
+      </edge><edge source="2559" target="5614">
+        <attvalues></attvalues>
+      </edge><edge source="5614" target="2585">
+        <attvalues></attvalues>
+      </edge><edge source="2585" target="242">
+        <attvalues></attvalues>
+      </edge><edge source="242" target="2210">
+        <attvalues></attvalues>
+      </edge><edge source="2210" target="5225">
+        <attvalues></attvalues>
+      </edge><edge source="5225" target="3531">
+        <attvalues></attvalues>
+      </edge><edge source="3531" target="4565">
+        <attvalues></attvalues>
+      </edge><edge source="4565" target="1801">
+        <attvalues></attvalues>
+      </edge><edge source="1801" target="2766">
+        <attvalues></attvalues>
+      </edge><edge source="5089" target="4069">
+        <attvalues></attvalues>
+      </edge><edge source="4069" target="3527">
+        <attvalues></attvalues>
+      </edge><edge source="3527" target="3994">
+        <attvalues></attvalues>
+      </edge><edge source="3994" target="3874">
+        <attvalues></attvalues>
+      </edge><edge source="3874" target="3831">
+        <attvalues></attvalues>
+      </edge><edge source="3831" target="720">
+        <attvalues></attvalues>
+      </edge><edge source="720" target="5092">
+        <attvalues></attvalues>
+      </edge><edge source="5092" target="672">
+        <attvalues></attvalues>
+      </edge><edge source="672" target="4152">
+        <attvalues></attvalues>
+      </edge><edge source="4152" target="5285">
+        <attvalues></attvalues>
+      </edge><edge source="5285" target="2512">
+        <attvalues></attvalues>
+      </edge></edges>  </graph>
+</gexf>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2014-01-30">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="modularity_class" title="Modularity Class" type="integer"></attribute>
+    </attributes><nodes><node id="100201" label="《赤水玄珠》">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100202" label="《痘疹活动至宝》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100203" label="《嵩崖尊生》">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100204" label="《喉科紫珍集》">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100205" label="《医方简义》">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100206" label="《良朋汇集》">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100207" label="《大生要旨·续编》">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100208" label="《三山曾太丞方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100209" label="《经目屡验良方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100210" label="《衷中参西》">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100211" label="《串雅外编》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100212" label="《幼幼集成》">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100213" label="《典药方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100214" label="《刺疔捷法》">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100215" label="《如宜方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100216" label="《医道日用纲目》">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100217" label="《凤髓经》">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100218" label="《此事难知》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100219" label="《痘疹世医心法》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100220" label="《百草镜》">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100221" label="《斗门方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100222" label="《集验良方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100223" label="《寒温条辨》">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100224" label="《五关贯真珠囊》">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100225" label="《病机沙篆》">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100226" label="《古今医鉴》">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100227" label="《内科摘要》">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100228" label="《女科万金方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100229" label="《产孕集》">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100230" label="《古方汇精》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100231" label="《笔花医镜》">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100232" label="《东医宝鉴》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100233" label="《程松崖眼科》">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100234" label="《中国药典》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100235" label="《医家心法》">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100236" label="《丹溪心法》">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100237" label="《钱乙小儿方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100238" label="《卫生宝鉴》">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100239" label="《指南方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100240" label="《片玉心书》">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100241" label="《灵苑方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100242" label="《疡科心得集·方汇》">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100243" label="《永类钤方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100244" label="《灵枢》">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100245" label="《中藏经·附录》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100246" label="《类编》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100247" label="《医学摘粹·杂症要法》">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100248" label="《绛囊撮要》">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100249" label="《理伤续断方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100250" label="《感证辑要》">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100251" label="《种杏仙方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100252" label="《痘科金镜赋集解》">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100253" label="《马培之医案》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100254" label="《医统》">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100255" label="《袖珍》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100256" label="《医贯》">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100257" label="《卢氏信验方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100258" label="《王氏集验方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100259" label="《伤科大成》">
+        <attvalues>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100260" label="《仙人水鉴》">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100261" label="《简易方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100262" label="《产科发蒙·附录》">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100263" label="《外科百效》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100264" label="《产孕集·补遗》">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100265" label="《谭氏殊圣方》">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100266" label="《痧喉汇言》">
+        <attvalues>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100267" label="《眼科金镜》">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100268" label="《医学启源》">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100269" label="《痘科辨要》">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="100270" label="《胎产须知》">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node></nodes><edges></edges>  </graph>
+</gexf>

@@ -1,0 +1,21 @@
+.scrollbar{
+	height: 100%;
+	overflow-y: scroll;
+	font-size: 18px;
+}
+
+.scrollbar::-webkit-scrollbar{/*滚动条整体样式*/
+	width: 10px;/*宽高分别对应横竖滚动条的尺寸*/
+	height: 1px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb{/*滚动条里的小方块*/
+	border-radius: 10px;
+	-webkit-box-shadow: rgba(0, 0, 0, 1);
+	background: rgba(206, 120, 0, 0.5);
+}
+
+.scrollbar::-webkit-scrollbar-track{/*滚动条的轨道*/
+	border-radius: 10px;
+	background: #fff;
+}

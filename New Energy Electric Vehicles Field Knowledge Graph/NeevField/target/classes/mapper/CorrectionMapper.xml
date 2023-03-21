@@ -1,0 +1,13 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http:mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dhh.tcm.dao.CorrectionMapper">
+    <resultMap id="correctionMapper" type="indi.zyang.neev.entity.Correction">
+        <id property="correctionId" column="correctionId"/>
+    </resultMap>
+
+    <insert id="insertCorrection" parameterType="correction" useGeneratedKeys="true" keyProperty="correctionId" keyColumn="correctionId">
+        insert into correction(errorType, errorId, errorName, suggestion, status, ip, phone)
+        values(#{errorType}, #{errorId}, #{errorName}, #{suggestion}, #{status}, #{ip}, #{phone})
+    </insert>
+</mapper>
