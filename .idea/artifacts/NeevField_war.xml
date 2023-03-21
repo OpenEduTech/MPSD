@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="NeevField:war">
+    <output-path>$PROJECT_DIR$/New Energy Electric Vehicles Field Knowledge Graph/NeevField/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>NeevField</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="NeevField.war">
+      <element id="artifact" artifact-name="NeevField:war exploded" />
+    </root>
+  </artifact>
+</component>
