@@ -1,7 +1,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http:mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.dhh.tcm.dao.PrescriptionInfoMapper">
+<mapper namespace="indi.zyang.neev.dao.PrescriptionInfoMapper">
     <resultMap id="prescriptionInfoMapper" type="indi.zyang.neev.entity.PrescriptionInfo">
         <id property="prescriptionInfoId" column="prescriptionInfoId"/>
     </resultMap>

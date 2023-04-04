@@ -1,7 +1,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http:mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.dhh.tcm.dao.DiseaseMapper">
+<mapper namespace="indi.zyang.neev.dao.DiseaseMapper">
     <resultMap id="diseaseMapper" type="indi.zyang.neev.entity.Disease">
         <id property="diseaseId" column="diseaseId"/>
     </resultMap>

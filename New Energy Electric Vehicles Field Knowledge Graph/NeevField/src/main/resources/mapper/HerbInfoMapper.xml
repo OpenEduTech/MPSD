@@ -1,7 +1,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http:mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.dhh.tcm.dao.HerbInfoMapper">
+<mapper namespace="indi.zyang.neev.dao.HerbInfoMapper">
     <resultMap id="herbInfoMapper" type="indi.zyang.neev.entity.HerbInfo">
         <id property="herbInfoId" column="herbInfoId"/>
     </resultMap>
