@@ -1,0 +1,12 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http:mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="indi.zyang.neev.dao.DescriptionMapper">
+    <resultMap id="descriptionMapper" type="indi.zyang.neev.entity.Description">
+        <id property="desId" column="desId"/>
+    </resultMap>
+
+    <select id="findDescriptionByDesId" resultMap="descriptionMapper">
+        select * from description where desId = #{desId}
+    </select>
+</mapper>

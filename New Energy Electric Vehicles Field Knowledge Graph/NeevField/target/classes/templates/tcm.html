@@ -2,50 +2,34 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>中医药知识可视化</title>
+    <title>新能源汽车知识图谱</title>
     <link href="/images/logo.ico" rel="icon" type="image/x-ico">
     <link rel="stylesheet" type="text/css" href="/css/tcm.css"/>
-    <link rel="stylesheet" type="text/css" href="/css/map.css">
-    <script type="text/javascript" src="//api.map.baidu.com/api?type=webgl&v=1.0&ak=ex1WXYFcx5KUPuNFGdVipDcplNWeDCNj"></script>
 </head>
 <body>
     <div th:replace="head::head"></div>
     <div class="arrow-left"></div>
     <main>
-        <div id="prescription" class="slide"></div>
-        <div id="herb" class="slide"></div>
-        <div id="book" class="slide"></div>
-        <div id="disease" class="slide"></div>
-        <div id="geography" class="slide"></div>
+        <div id="company" class="slide"></div>
+        <div id="industry" class="slide"></div>
+        <div id="product" class="slide"></div>
     </main>
     <div class="arrow-right"></div>
     <div class="abbreviation">
-        <div id="prescription-zoom" class="zoom">
-            <p>药剂</p>
+        <div id="company-zoom" class="zoom">
+            <p>公司</p>
         </div>
-        <div id="herb-zoom" class="zoom">
-            <p>草药</p>
+        <div id="industry-zoom" class="zoom">
+            <p>行业</p>
         </div>
-        <div id="book-zoom" class="zoom">
-            <p>典籍</p>
+        <div id="product-zoom" class="zoom">
+            <p>产品</p>
         </div>
-        <div id="disease-zoom" class="zoom">
-            <p>病症</p>
-        </div>
-        <div id="geography-zoom" class="zoom">
-            <p>地理</p>
-        </div>
-    </div>
-
-    <div class="geography-layer">
-        <div id="map"></div>
-        <div class="turn-off"></div>
     </div>
 
     <script type="text/javascript" src="/js/jquery.min.js"></script>
     <script type="text/javascript" src="/js/echarts.min.js"></script>
     <script type="text/javascript" src="/js/dataTool.min.js"></script>
-    <script type="text/javascript" src="/js/map.js"></script>
     <script type="text/javascript" src="/js/tcm.js"></script>
 </body>
 </html>

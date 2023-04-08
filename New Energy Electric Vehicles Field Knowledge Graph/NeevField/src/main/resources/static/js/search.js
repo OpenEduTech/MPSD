@@ -3,6 +3,9 @@ const herbItemDom = document.querySelector(".herb_item");
 const bookItemDom = document.querySelector(".book_item");
 const diseaseItemDom = document.querySelector(".disease_item");
 const geographyItemDom = document.querySelector(".geography_item");
+const companyItemDom = document.querySelector(".company_item");
+const industryItemDom = document.querySelector(".industry_item");
+const productItemDom = document.querySelector(".product_item");
 const inputDom = document.querySelector("#search_input");
 let type = 0;
 
@@ -26,6 +29,20 @@ geographyItemDom.addEventListener("click", function () {
     inputDom.setAttribute("class", "search_geography");
     type = 4;
 });
+
+companyItemDom.addEventListener("click", function () {
+    inputDom.setAttribute("class", "search_company");
+    type = 0;
+});
+industryItemDom.addEventListener("click", function () {
+    inputDom.setAttribute("class", "search_industry");
+    type = 1;
+});
+productItemDom.addEventListener("click", function () {
+    inputDom.setAttribute("class", "search_product");
+    type = 2;
+});
+
 let scontent;
 const searchButtonDom = document.querySelector(".search_button");
 searchButtonDom.addEventListener("click", function () {
@@ -74,7 +91,57 @@ function buildTable(item, data) {
         case "geography":
             buildGeographyTable(data);
             break;
+        case "company":
+            buildCompanyTable(data);
+            break;
+        case "industry":
+            buildIndustryTable(data);
+            break;
+        case "product":
+            buildProductTable(data);
+            break;
     }
+}
+function buildCompanyTable(data){
+    let content = `<div class="result company">`;
+    for (let company of data) {
+        content = content + `<div class="company_result" data-id="${company.comId}">${company.comName.replace(scontent, `<span class='key_word'>${scontent}</span>`)}</div>`;
+    }
+    content = content + `</div>`;
+    $("#search_result").html(content);
+
+    const resultDomList = document.querySelectorAll(".company_result");
+    for (let resultDom of resultDomList){
+        resultDom.addEventListener("click", function () {
+            let id = resultDom.getAttribute("data-id");
+            window.localStorage.setItem("item", "company");
+            window.localStorage.setItem("id", id);
+            window.open("/tcm/info");
+        });
+    }
+}
+
+function  buildIndustryTable(data){
+    let content = `<div class="result industry">`;
+    for (let industry of data) {
+        content = content + `<div class="industry_result" data-id="${industry.indId}">${industry.indName.replace(scontent, `<span class='key_word'>${scontent}</span>`)}</div>`;
+    }
+    content = content + `</div>`;
+    $("#search_result").html(content);
+
+    const resultDomList = document.querySelectorAll(".industry_result");
+    for (let resultDom of resultDomList){
+        resultDom.addEventListener("click", function () {
+            let id = resultDom.getAttribute("data-id");
+            window.localStorage.setItem("item", "industry");
+            window.localStorage.setItem("id", id);
+            window.open("/tcm/info");
+        });
+    }
+}
+
+function buildProductTable(data){
+
 }
 
 function buildPrescriptionTable(data) {

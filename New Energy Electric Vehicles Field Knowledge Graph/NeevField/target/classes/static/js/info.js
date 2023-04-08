@@ -171,20 +171,20 @@ function getCategoryName(category) {
     let categoryName = "";
     switch (category) {
         case 0:
-            categoryName = "药剂";
+            categoryName = "公司";
             break;
         case 1:
-            categoryName = "草药";
+            categoryName = "产业";
             break;
         case 2:
-            categoryName = "病症";
+            categoryName = "产品";
             break;
-        case 3:
-            categoryName = "典籍";
-            break;
-        case 4:
-            categoryName = "地理位置";
-            break;
+        // case 3:
+        //     categoryName = "典籍";
+        //     break;
+        // case 4:
+        //     categoryName = "地理位置";
+        //     break;
     }
     return categoryName;
 }
@@ -193,20 +193,20 @@ function getEnglishCategoryName(category) {
     let categoryName = "";
     switch (category) {
         case 0:
-            categoryName = "prescription";
+            categoryName = "company";
             break;
         case 1:
-            categoryName = "herb";
+            categoryName = "industry";
             break;
         case 2:
-            categoryName = "disease";
+            categoryName = "product";
             break;
-        case 3:
-            categoryName = "book";
-            break;
-        case 4:
-            categoryName = "geography";
-            break;
+        // case 3:
+        //     categoryName = "book";
+        //     break;
+        // case 4:
+        //     categoryName = "geography";
+        //     break;
     }
     return categoryName;
 }
@@ -214,24 +214,24 @@ function getEnglishCategoryName(category) {
 function getEnglishCategoryNameByChar(category) {
     let categoryName = "";
     switch (category) {
+        case "c":
+            categoryName = "company";
+            break;
+        case "i":
+            categoryName = "industry";
+            break;
         case "p":
-            categoryName = "prescription";
+            categoryName = "product";
             break;
-        case "h":
-            categoryName = "herb";
-            break;
-        case "d":
-            categoryName = "disease";
-            break;
-        case "b":
-            categoryName = "book";
-            break;
-        case "g":
-            categoryName = "geography";
-            break;
-        case "hi":
-            categoryName = "herbInfo";
-            break;
+        // case "b":
+        //     categoryName = "book";
+        //     break;
+        // case "g":
+        //     categoryName = "geography";
+        //     break;
+        // case "hi":
+        //     categoryName = "herbInfo";
+        //     break;
     }
     return categoryName;
 }
@@ -249,52 +249,44 @@ function getRelation(source, target, tip) {
     if (tip){
         txt = "关系：";
     }
-    if (source.category == 0 && target.category == 3){
-        return txt + "收录";
-    }else if (source.category == 3 && target.category == 1){
-        return txt + "成分";
-    }else if (source.category == 1 && target.category == 3){
-        return txt + "收录";
-    }else if (source.category == 3 && target.category == 2){
-        return txt + "治疗";
-    }else if (source.category == 3 && target.category == 4){
-        return txt + "位置";
+    if (source.category == 0 && target.category == 0){
+        return txt + "竞争";
+    }else if (source.category == 0 && target.category == 1){
+        return txt + "归属于";
+    }else if (source.category == 0 && target.category == 2){
+        return txt + "拥有";
     }else if (source.category == 1 && target.category == 0){
-        return txt + "构成";
-    }else if (source.category == 3 && target.category == 0){
-        return txt + "收录";
+        return txt + "具有";
     }else if (source.category == 1 && target.category == 1){
-        return txt + "别称";
-    }else if (source.category == 1 && target.category == 2){
-        return txt + "治疗";
+        return txt + "同游";
+    }else if (source.category == 2 && target.category == 0){
+        return txt + "归属于";
+    }else if (source.category == 2 && target.category == 2){
+        return txt + "竞争";
+    }else if (source.category == 1 && target.category == 3){
+        return txt + "下游";
     }else if (source.category == 1 && target.category == 4){
-        return txt + "位置";
+        return txt + "上游";
     }
 }
 
 function getRelationByChar(source, target) {
     let s = source.substring(0,1);
     let t = target.substring(0,1);
-    if (s == "p" && t == "b"){
-        return "收录";
-    }else if (s == "b" && t == "h"){
-        return "成分";
-    }else if (s == "h" && t == "b"){
-        return "收录";
-    }else if (s == "b" && t == "d"){
-        return "治疗";
-    }else if (s == "b" && t == "g"){
-        return "位置";
-    }else if (s == "h" && t == "p"){
-        return "构成";
-    }else if (s == "b" && t == "p"){
-        return "收录";
-    }else if (s == "h" && t == "h"){
-        return "别称";
-    }else if (s == "h" && t == "d"){
-        return "治疗";
-    }else if (s == "h" && t == "g"){
-        return "位置";
+    if (s == "c" && t == "c"){
+        return "竞争";
+    }else if (s == "c" && t == "i"){
+        return "归属";
+    }else if (s == "c" && t == "p"){
+        return "拥有";
+    }else if (s == "i" && t == "c"){
+        return "具有";
+    }else if (s == "i" && t == "i"){
+        return "上下游";
+    }else if (s == "p" && t == "c"){
+        return "归属";
+    }else if (s == "p" && t == "p"){
+        return "竞争";
     }
 }
 
@@ -527,309 +519,372 @@ function addSpriteText(node){
 
 function updateInfo(item, data){
     switch (item) {
-        case "prescription":
-            prescriptionInfo(data);
+        case "company":
+            companyInfo(data);
             break;
-        case "book":
-            diseaseAndBookInfo(data, "book");
+        case "industry":
+            industryInfo(data);
             break;
-        case "herb":
-            herbInfo(data);
+        case "product":
+            productInfo(data);
             break;
-        case "herbInfo":
-            oneHerbInfo(data);
-            break;
-        case "disease":
-            diseaseAndBookInfo(data, "disease");
+        // case "herbInfo":
+        //     oneHerbInfo(data);
+        //     break;
+        // case "disease":
+        //     diseaseAndBookInfo(data, "disease");
     }
 }
 
-function diseaseAndBookInfo(data, type) {
+function companyInfo(data) {
     let content = ``;
-    if (type == 'book'){
-        content = `<div>
-                        <div class="title">典籍名称</div>
-                        <div class="content location" data-sid="b${data.bookId}">${data.bookName}<span title="报错" class="error" data-type="book" data-id="${data.bookId}"></span></div>
-                   </div>`;
-    }else {
-        content = `<div>
-                        <div class="title">病症名称</div>
-                        <div class="content location" data-sid="d${data.diseaseId}">${data.diseaseName}<span title="报错" class="error" data-type="disease" data-id="${data.diseaseId}"></span></div>
-                   </div>`;
-    }
-    let herbInfoList = data.herbInfoList;
-    let herbCount = 0;
-    let herbPage = 0;
-    if (herbInfoList.length > 0){
-        content = content + `<div class="book_herb"><div class="herb_groups">草药（共${herbInfoList.length}种）</div><div class="groups_herb">`;
-    }else {
-        content = content + `<div class="book_herb"><div class="groups_herb">`;
-    }
-    for (let herbInfo of herbInfoList){
-        if (herbCount == 0){
-            content = content + `<div class="group_herb">`;
-            herbPage = herbPage + 1;
-        }
-        content = content + herbInfoHtml(herbInfo, herbInfo.herbName);
-        herbCount = herbCount + 1;
-        if (herbCount == 10){
-            content = content + `</div>`;
-            herbCount = 0;
-        }
-    }
-    if (herbCount % 10 != 0){
-        content = content + `</div>`;
-    }
-    if (herbInfoList.length > 10){
-        content = content + `</div><div class="arrow-left-herb"></div><div class="herb-page"><span class="herb-now-page">1</span>/${herbPage}</div><div class="arrow-right-herb"></div></div>`;
-    }else {
-        content = content + `</div></div>`;
-    }
-
-    let prescriptionInfoList = data.prescriptionInfoList;
-    let prescriptionMap = computerSimplyPrescription(prescriptionInfoList);
-
-    let count = 0;
-    let prescriptionPage = 0;
-    if (prescriptionMap.size > 0){
-        content = content + `<div class="book_prescription"><div class="prescription_groups">药剂（共${prescriptionMap.size}剂）</div><div class="groups_pre">`;
-    }else {
-        content = content + `<div class="book_prescription"><div class="groups_pre">`;
-    }
-
-    for (let [prescriptionId, prescription] of prescriptionMap){
-        if (count == 0){
-            content = content + `<div class="group_pre">`;
-            prescriptionPage = prescriptionPage + 1;
-        }
-        content = content + `<div class="pre_index" data-type="prescription" data-id="${prescriptionId}" data-sid="p${prescriptionId}">
-                                <div class="name">${prescription.prescriptionName}</div>
-                                <span class="error_icon" title="纠错"></span>
-                                <span class="spr_icon"></span>
-                            </div>
-                            <div class="pre">`;
-
-        let preInfoList = prescription.prescriptionInfoList;
-        if (preInfoList.length == 1){
-            let pInfo = preInfoList[0];
-            content = content + prescriptionInfoHtml(pInfo);
-        }else{
-            for (let i = 0; i < preInfoList.length; i++) {
-                let pInfo = preInfoList[i];
-                content = content + prescriptionHtml(pInfo, `（${(i+1)}）${pInfo.prescriptionName}`);
-            }
-        }
-        content = content + `</div>`;
-        count = count + 1;
-        if (count == 10){
-            content = content + `</div>`;
-            count = 0;
-        }
-    }
-    if (count % 10 != 0){
-        content = content + `</div>`;
-    }
-    if (prescriptionMap.size > 10){
-        content = content + `</div><div class="arrow-left"></div><div class="prescription-page"><span class="pre-now-page">1</span>/${prescriptionPage}</div><div class="arrow-right"></div></div>`;
-    }else {
-        content = content + `</div></div>`;
-    }
-
-    $("#info").html(content);
-    fold();
-    preIndex = 0;
-    herbIndex = 0;
-    moveScrollBar();//必须写在fold()之后
-}
-
-function oneHerbInfo(data) {
-    let content = ``;
-    let herbName = data.herbName;
-    for (let attr in data){
-        let chineseName = field.get(attr);
-        if (chineseName){
-            let describe = data[attr];
-            if (describe){
-                content = content + `
-                    <div>
-                        <div class="title">${chineseName}</div>
-                        <div class="content ${attr}">${describe.replace(herbName, `<span class="key_word">${herbName}</span>`)}</div>
-                    </div>
-                    `;
-            }
-        }
-    }
-    $("#info").html(content);
-}
-
-function herbInfo(data) {
-    let content = ``;
-    let herbName = data.herbName;
-    let herbInfoList = data.herbInfoList;
-    if (herbInfoList.length == 0){
+    let comName = data.comName;
+    if (content.length == 0){
         content = content + `<div>
-                                <div class="title">草药名称</div>
-                                <div class="content location" data-sid="h${data.herbId}">${herbName}<span title="报错" class="error" data-type="herb" data-id="${data.herbId}"></span></div>
-                                <div class="content">抱歉，数据库中暂未收录该草药的生境分布、性味、炮制方法等信息</div>
+                                <div class="title">公司名称</div>
+                                <div class="content location" data-sid="h${data.comId}">${comName}<span title="报错" class="error" data-type="company" data-id="${data.comId}"></span></div>
+                                <div class="content">抱歉，数据库中暂未收录该公司的具体信息</div>
                             </div>`;
     }else {
         content = content + `<div>
-                                <div class="title">草药名称</div>
-                                <div class="content location" data-sid="h${data.herbId}">${herbName}<span title="报错" class="error" data-type="herb" data-id="${data.herbId}"></span></div>
+                                <div class="title">公司名称</div>
+                                <div class="content location" data-sid="h${data.comId}">${comName}<span title="报错" class="error" data-type="company" data-id="${data.comId}"></span></div>
                             </div>`;
-        for (let herbInfo of herbInfoList){
-            content = content + herbInfoHtmlUnion(herbInfo, herbName, data.herbId);
-        }
     }
-
 
     $("#info").html(content);
     fold();
 }
 
-function herbInfoHtmlUnion(herbInfo, herbName, herbId) {
-    let text = ``;
-    if (herbInfo.herbName == herbName){
-        text = text + `<div class="pre_index" data-type="herbInfo" data-id="${herbInfo.herbInfoId}" data-sid="hi${herbInfo.herbInfoId}" data-hsid="h${herbId}">`;
+function industryInfo(data) {
+    let content = ``;
+    let indName = data.indName;
+    if (content.length == 0){
+        content = content + `<div>
+                                <div class="title">产业名称</div>
+                                <div class="content location" data-sid="h${data.indId}">${indName}<span title="报错" class="error" data-type="industry" data-id="${data.indId}"></span></div>
+                                <div class="content">抱歉，数据库中暂未收录该产业的具体信息</div>
+                            </div>`;
     }else {
-        text = text + `<div class="pre_index" data-type="herbInfo" data-id="${herbInfo.herbInfoId}" data-sid="hi${herbInfo.herbInfoId}">`;
-    }
-    text = text + `<div class="name">${herbInfo.herbName}</div>
-                            <span class="error_icon" title="纠错"></span>
-                            <span class="spr_icon"></span>
-                        </div>
-                        <div class="pre">`;
-    for (let attr in herbInfo){
-        let chineseName = field.get(attr);
-        if (chineseName && attr != "herbName"){
-            let describe = herbInfo[attr];
-            if (describe){
-                text = text + `
-                    <div>
-                        <div class="title">${chineseName}</div>
-                        <div class="content ${attr}">${describe.replace(herbName, `<span class="key_word">${herbName}</span>`)}</div>
-                    </div>
-                    `;
-            }
-        }
-    }
-    text = text + `</div>`;
-    return text;
-}
-
-function herbInfoHtml(herbInfo, herbName) {
-    let text = ``;
-    text = text + `<div class="pre_index" data-type="herbInfo" data-id="${herbInfo.herbInfoId}" data-sid="hi${herbInfo.herbInfoId}">
-                            <div class="name">${herbInfo.herbName}</div>
-                            <span class="error_icon" title="纠错"></span>
-                            <span class="spr_icon"></span>
-                        </div>
-                        <div class="pre">`;
-    for (let attr in herbInfo){
-        let chineseName = field.get(attr);
-        if (chineseName && attr != "herbName"){
-            let describe = herbInfo[attr];
-            if (describe){
-                text = text + `
-                    <div>
-                        <div class="title">${chineseName}</div>
-                        <div class="content ${attr}">${describe.replace(herbName, `<span class="key_word">${herbName}</span>`)}</div>
-                    </div>
-                    `;
-            }
-        }
-    }
-    text = text + `</div>`;
-    return text;
-}
-
-function prescriptionInfo(data) {
-    let content = `<div>
-                        <div class="title">药剂名称</div>
-                        <div class="content location" data-sid="p${data.prescriptionId}">${data.prescriptionName}<span title="报错" class="error" data-type="prescription" data-id="${data.prescriptionId}"></span></div>
-                   </div>`;
-    let prescriptionInfoList = data.prescriptionInfoList;
-    for (let i = 0; i < prescriptionInfoList.length; i++){
-        let pInfo = prescriptionInfoList[i];
-        content = content + prescriptionHtmlByBook(pInfo, pInfo.prescriptionProvenance.replace("。",""));
+        content = content + `<div>
+                                <div class="title">产业名称</div>
+                                <div class="content location" data-sid="h${data.indId}">${indName}<span title="报错" class="error" data-type="industry" data-id="${data.indId}"></span></div>
+                            </div>`;
     }
 
     $("#info").html(content);
     fold();
 }
 
-function Prescription(prescriptionId, prescriptionName) {
-    this.prescriptionId = prescriptionId;
-    this.prescriptionName = prescriptionName;
-    this.prescriptionInfoList = new Array();
-    this.addPrescriptionInfo = function (prescriptionInfo) {
-        this.prescriptionInfoList.push(prescriptionInfo);
-    }
-}
-
-function computerSimplyPrescription(prescriptionInfoList) {
-    let prescriptionMap = new Map();
-    for (let i = 0; i < prescriptionInfoList.length; i++) {
-        let prescription = prescriptionMap.get(prescriptionInfoList[i].prescriptionId);
-        if(prescription){
-            prescription.addPrescriptionInfo(prescriptionInfoList[i]);
-        }else {
-            prescription = new Prescription(prescriptionInfoList[i].prescriptionId, prescriptionInfoList[i].prescriptionName);
-            prescription.addPrescriptionInfo(prescriptionInfoList[i]);
-            prescriptionMap.set(prescriptionInfoList[i].prescriptionId, prescription);
-        }
-    }
-    return prescriptionMap;
-}
-
-function prescriptionHtmlByBook(pInfo, name) {
+function productInfo(data) {
     let content = ``;
-    let bsid = '';
-    if (pInfo.bookList){
-        bsid = 'b' + pInfo.bookList[0].bookId;
+    let proName = data.proName;
+    if (content.length == 0){
+        content = content + `<div>
+                                <div class="title">产品名称</div>
+                                <div class="content location" data-sid="h${data.proId}">${proName}<span title="报错" class="error" data-type="product" data-id="${data.proId}"></span></div>
+                                <div class="content">抱歉，数据库中暂未收录该产品的具体信息</div>
+                            </div>`;
+    }else {
+        content = content + `<div>
+                                <div class="title">产品名称</div>
+                                <div class="content location" data-sid="h${data.proId}">${proName}<span title="报错" class="error" data-type="product" data-id="${data.proId}"></span></div>
+                            </div>`;
     }
-    content = content + `<div class="pre_index" data-type="prescriptionInfo" data-id="${pInfo.prescriptionInfoId}" data-sid="pi${pInfo.prescriptionInfoId}" data-bsid="${bsid}">
-                            <div class="name">${name}</div>
-                            <span class="error_icon" title="纠错"></span>
-                            <span class="spr_icon"></span>
-                        </div>
-                        <div class="pre">`;
-    content = content + prescriptionInfoHtml(pInfo);
-    content = content + `</div>`;
-    return content;
+
+    $("#info").html(content);
+    fold();
 }
 
-function prescriptionHtml(pInfo, name) {
-    let content = ``;
-    content = content + `<div class="pre_index" data-type="prescriptionInfo" data-id="${pInfo.prescriptionInfoId}" data-sid="pi${pInfo.prescriptionInfoId}">
-                            <div class="name">${name}</div>
-                            <span class="error_icon" title="纠错"></span>
-                            <span class="spr_icon"></span>
-                        </div>
-                        <div class="pre">`;
-    content = content + prescriptionInfoHtml(pInfo);
-    content = content + `</div>`;
-    return content;
-}
 
-function prescriptionInfoHtml(pInfo) {
-    let content = ``;
-    for (let attr in pInfo){
-        let chineseName = field.get(attr);
-        if (chineseName && attr != "prescriptionName" && attr != "prescriptionProvenance"){
-            let describe = pInfo[attr];
-            if (describe){
-                content = content + `
-                    <div>
-                        <div class="title">${chineseName}</div>
-                        <div class="content">${describe}</div>
-                    </div>
-                `;
-            }
-        }
-    }
-    return content;
-}
+
+
+// function diseaseAndBookInfo(data, type) {
+//     let content = ``;
+//     if (type == 'book'){
+//         content = `<div>
+//                         <div class="title">典籍名称</div>
+//                         <div class="content location" data-sid="b${data.bookId}">${data.bookName}<span title="报错" class="error" data-type="book" data-id="${data.bookId}"></span></div>
+//                    </div>`;
+//     }else {
+//         content = `<div>
+//                         <div class="title">病症名称</div>
+//                         <div class="content location" data-sid="d${data.diseaseId}">${data.diseaseName}<span title="报错" class="error" data-type="disease" data-id="${data.diseaseId}"></span></div>
+//                    </div>`;
+//     }
+//     let herbInfoList = data.herbInfoList;
+//     let herbCount = 0;
+//     let herbPage = 0;
+//     if (herbInfoList.length > 0){
+//         content = content + `<div class="book_herb"><div class="herb_groups">草药（共${herbInfoList.length}种）</div><div class="groups_herb">`;
+//     }else {
+//         content = content + `<div class="book_herb"><div class="groups_herb">`;
+//     }
+//     for (let herbInfo of herbInfoList){
+//         if (herbCount == 0){
+//             content = content + `<div class="group_herb">`;
+//             herbPage = herbPage + 1;
+//         }
+//         content = content + herbInfoHtml(herbInfo, herbInfo.herbName);
+//         herbCount = herbCount + 1;
+//         if (herbCount == 10){
+//             content = content + `</div>`;
+//             herbCount = 0;
+//         }
+//     }
+//     if (herbCount % 10 != 0){
+//         content = content + `</div>`;
+//     }
+//     if (herbInfoList.length > 10){
+//         content = content + `</div><div class="arrow-left-herb"></div><div class="herb-page"><span class="herb-now-page">1</span>/${herbPage}</div><div class="arrow-right-herb"></div></div>`;
+//     }else {
+//         content = content + `</div></div>`;
+//     }
+//
+//     let prescriptionInfoList = data.prescriptionInfoList;
+//     let prescriptionMap = computerSimplyPrescription(prescriptionInfoList);
+//
+//     let count = 0;
+//     let prescriptionPage = 0;
+//     if (prescriptionMap.size > 0){
+//         content = content + `<div class="book_prescription"><div class="prescription_groups">药剂（共${prescriptionMap.size}剂）</div><div class="groups_pre">`;
+//     }else {
+//         content = content + `<div class="book_prescription"><div class="groups_pre">`;
+//     }
+//
+//     for (let [prescriptionId, prescription] of prescriptionMap){
+//         if (count == 0){
+//             content = content + `<div class="group_pre">`;
+//             prescriptionPage = prescriptionPage + 1;
+//         }
+//         content = content + `<div class="pre_index" data-type="prescription" data-id="${prescriptionId}" data-sid="p${prescriptionId}">
+//                                 <div class="name">${prescription.prescriptionName}</div>
+//                                 <span class="error_icon" title="纠错"></span>
+//                                 <span class="spr_icon"></span>
+//                             </div>
+//                             <div class="pre">`;
+//
+//         let preInfoList = prescription.prescriptionInfoList;
+//         if (preInfoList.length == 1){
+//             let pInfo = preInfoList[0];
+//             content = content + prescriptionInfoHtml(pInfo);
+//         }else{
+//             for (let i = 0; i < preInfoList.length; i++) {
+//                 let pInfo = preInfoList[i];
+//                 content = content + prescriptionHtml(pInfo, `（${(i+1)}）${pInfo.prescriptionName}`);
+//             }
+//         }
+//         content = content + `</div>`;
+//         count = count + 1;
+//         if (count == 10){
+//             content = content + `</div>`;
+//             count = 0;
+//         }
+//     }
+//     if (count % 10 != 0){
+//         content = content + `</div>`;
+//     }
+//     if (prescriptionMap.size > 10){
+//         content = content + `</div><div class="arrow-left"></div><div class="prescription-page"><span class="pre-now-page">1</span>/${prescriptionPage}</div><div class="arrow-right"></div></div>`;
+//     }else {
+//         content = content + `</div></div>`;
+//     }
+//
+//     $("#info").html(content);
+//     fold();
+//     preIndex = 0;
+//     herbIndex = 0;
+//     moveScrollBar();//必须写在fold()之后
+// }
+//
+// function oneHerbInfo(data) {
+//     let content = ``;
+//     let herbName = data.herbName;
+//     for (let attr in data){
+//         let chineseName = field.get(attr);
+//         if (chineseName){
+//             let describe = data[attr];
+//             if (describe){
+//                 content = content + `
+//                     <div>
+//                         <div class="title">${chineseName}</div>
+//                         <div class="content ${attr}">${describe.replace(herbName, `<span class="key_word">${herbName}</span>`)}</div>
+//                     </div>
+//                     `;
+//             }
+//         }
+//     }
+//     $("#info").html(content);
+// }
+//
+// function herbInfo(data) {
+//     let content = ``;
+//     let herbName = data.herbName;
+//     let herbInfoList = data.herbInfoList;
+//     if (herbInfoList.length == 0){
+//         content = content + `<div>
+//                                 <div class="title">草药名称</div>
+//                                 <div class="content location" data-sid="h${data.herbId}">${herbName}<span title="报错" class="error" data-type="herb" data-id="${data.herbId}"></span></div>
+//                                 <div class="content">抱歉，数据库中暂未收录该草药的生境分布、性味、炮制方法等信息</div>
+//                             </div>`;
+//     }else {
+//         content = content + `<div>
+//                                 <div class="title">草药名称</div>
+//                                 <div class="content location" data-sid="h${data.herbId}">${herbName}<span title="报错" class="error" data-type="herb" data-id="${data.herbId}"></span></div>
+//                             </div>`;
+//         for (let herbInfo of herbInfoList){
+//             content = content + herbInfoHtmlUnion(herbInfo, herbName, data.herbId);
+//         }
+//     }
+//
+//
+//     $("#info").html(content);
+//     fold();
+// }
+//
+// function herbInfoHtmlUnion(herbInfo, herbName, herbId) {
+//     let text = ``;
+//     if (herbInfo.herbName == herbName){
+//         text = text + `<div class="pre_index" data-type="herbInfo" data-id="${herbInfo.herbInfoId}" data-sid="hi${herbInfo.herbInfoId}" data-hsid="h${herbId}">`;
+//     }else {
+//         text = text + `<div class="pre_index" data-type="herbInfo" data-id="${herbInfo.herbInfoId}" data-sid="hi${herbInfo.herbInfoId}">`;
+//     }
+//     text = text + `<div class="name">${herbInfo.herbName}</div>
+//                             <span class="error_icon" title="纠错"></span>
+//                             <span class="spr_icon"></span>
+//                         </div>
+//                         <div class="pre">`;
+//     for (let attr in herbInfo){
+//         let chineseName = field.get(attr);
+//         if (chineseName && attr != "herbName"){
+//             let describe = herbInfo[attr];
+//             if (describe){
+//                 text = text + `
+//                     <div>
+//                         <div class="title">${chineseName}</div>
+//                         <div class="content ${attr}">${describe.replace(herbName, `<span class="key_word">${herbName}</span>`)}</div>
+//                     </div>
+//                     `;
+//             }
+//         }
+//     }
+//     text = text + `</div>`;
+//     return text;
+// }
+//
+// function herbInfoHtml(herbInfo, herbName) {
+//     let text = ``;
+//     text = text + `<div class="pre_index" data-type="herbInfo" data-id="${herbInfo.herbInfoId}" data-sid="hi${herbInfo.herbInfoId}">
+//                             <div class="name">${herbInfo.herbName}</div>
+//                             <span class="error_icon" title="纠错"></span>
+//                             <span class="spr_icon"></span>
+//                         </div>
+//                         <div class="pre">`;
+//     for (let attr in herbInfo){
+//         let chineseName = field.get(attr);
+//         if (chineseName && attr != "herbName"){
+//             let describe = herbInfo[attr];
+//             if (describe){
+//                 text = text + `
+//                     <div>
+//                         <div class="title">${chineseName}</div>
+//                         <div class="content ${attr}">${describe.replace(herbName, `<span class="key_word">${herbName}</span>`)}</div>
+//                     </div>
+//                     `;
+//             }
+//         }
+//     }
+//     text = text + `</div>`;
+//     return text;
+// }
+//
+// function prescriptionInfo(data) {
+//     let content = `<div>
+//                         <div class="title">药剂名称</div>
+//                         <div class="content location" data-sid="p${data.prescriptionId}">${data.prescriptionName}<span title="报错" class="error" data-type="prescription" data-id="${data.prescriptionId}"></span></div>
+//                    </div>`;
+//     let prescriptionInfoList = data.prescriptionInfoList;
+//     for (let i = 0; i < prescriptionInfoList.length; i++){
+//         let pInfo = prescriptionInfoList[i];
+//         content = content + prescriptionHtmlByBook(pInfo, pInfo.prescriptionProvenance.replace("。",""));
+//     }
+//
+//     $("#info").html(content);
+//     fold();
+// }
+//
+// function Prescription(prescriptionId, prescriptionName) {
+//     this.prescriptionId = prescriptionId;
+//     this.prescriptionName = prescriptionName;
+//     this.prescriptionInfoList = new Array();
+//     this.addPrescriptionInfo = function (prescriptionInfo) {
+//         this.prescriptionInfoList.push(prescriptionInfo);
+//     }
+// }
+//
+// function computerSimplyPrescription(prescriptionInfoList) {
+//     let prescriptionMap = new Map();
+//     for (let i = 0; i < prescriptionInfoList.length; i++) {
+//         let prescription = prescriptionMap.get(prescriptionInfoList[i].prescriptionId);
+//         if(prescription){
+//             prescription.addPrescriptionInfo(prescriptionInfoList[i]);
+//         }else {
+//             prescription = new Prescription(prescriptionInfoList[i].prescriptionId, prescriptionInfoList[i].prescriptionName);
+//             prescription.addPrescriptionInfo(prescriptionInfoList[i]);
+//             prescriptionMap.set(prescriptionInfoList[i].prescriptionId, prescription);
+//         }
+//     }
+//     return prescriptionMap;
+// }
+//
+// function prescriptionHtmlByBook(pInfo, name) {
+//     let content = ``;
+//     let bsid = '';
+//     if (pInfo.bookList){
+//         bsid = 'b' + pInfo.bookList[0].bookId;
+//     }
+//     content = content + `<div class="pre_index" data-type="prescriptionInfo" data-id="${pInfo.prescriptionInfoId}" data-sid="pi${pInfo.prescriptionInfoId}" data-bsid="${bsid}">
+//                             <div class="name">${name}</div>
+//                             <span class="error_icon" title="纠错"></span>
+//                             <span class="spr_icon"></span>
+//                         </div>
+//                         <div class="pre">`;
+//     content = content + prescriptionInfoHtml(pInfo);
+//     content = content + `</div>`;
+//     return content;
+// }
+//
+// function prescriptionHtml(pInfo, name) {
+//     let content = ``;
+//     content = content + `<div class="pre_index" data-type="prescriptionInfo" data-id="${pInfo.prescriptionInfoId}" data-sid="pi${pInfo.prescriptionInfoId}">
+//                             <div class="name">${name}</div>
+//                             <span class="error_icon" title="纠错"></span>
+//                             <span class="spr_icon"></span>
+//                         </div>
+//                         <div class="pre">`;
+//     content = content + prescriptionInfoHtml(pInfo);
+//     content = content + `</div>`;
+//     return content;
+// }
+//
+// function prescriptionInfoHtml(pInfo) {
+//     let content = ``;
+//     for (let attr in pInfo){
+//         let chineseName = field.get(attr);
+//         if (chineseName && attr != "prescriptionName" && attr != "prescriptionProvenance"){
+//             let describe = pInfo[attr];
+//             if (describe){
+//                 content = content + `
+//                     <div>
+//                         <div class="title">${chineseName}</div>
+//                         <div class="content">${describe}</div>
+//                     </div>
+//                 `;
+//             }
+//         }
+//     }
+//     return content;
+// }
 
 function turnPagePre(num){
     let width = $(".group_pre:nth-child(1)").width();

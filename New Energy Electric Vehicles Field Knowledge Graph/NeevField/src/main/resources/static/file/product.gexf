@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2014-01-30">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="modularity_class" title="Modularity Class" type="integer"></attribute>
+    </attributes><nodes><node id="30001" label="Model Y">
+        <attvalues>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="30002" label="Model 3">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="30003" label="海鸥">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node><node id="30004" label="海豚">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="30"></viz:size>
+      </node></nodes><edges>
+      <edge source="30001" target="30003"><attvalues></attvalues></edge>
+      <edge source="30003" target="30001><attvalues></attvalues></edge>
+      <edge source="30002" target="30004"><attvalues></attvalues></edge>
+      <edge source="30004" target="30002"><attvalues></attvalues></edge>
+      </edges>  </graph>
+</gexf>

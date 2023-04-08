@@ -1,0 +1,32 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http:mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="indi.zyang.neev.dao.IndustryMapper">
+    <resultMap id="industryMapper" type="indi.zyang.neev.entity.Industry">
+        <id property="indId" column="indId"/>
+    </resultMap>
+
+    <select id="findIndustryByIndId" resultMap="industryMapper">
+        select * from industry where indId = #{indId}
+    </select>
+
+    <select id="findIndustryByUpIndLevel" resultMap="industryMapper">
+        select * from industry
+        where indLevel &gt; (select indLevel from industry where indId = #{indId})
+    </select>
+
+    <select id="findIndustryByDownIndLevel" resultMap="industryMapper">
+        select * from industry
+        where indLevel &lt; (select indLevel from industry where indId = #{indId})
+    </select>
+
+    <select id="findIndustryByIndLevel" resultMap="industryMapper">
+        select * from industry
+        where indLevel in (select indLevel from industry where indId = #{indId})
+    </select>
+
+    <select id="findIndustryByComId" resultMap="industryMapper">
+        select * from industry
+        where indId in (select indId from com_ind_r where comId = #{comId})
+    </select>
+</mapper>
