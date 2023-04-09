@@ -9,42 +9,43 @@
       <attribute id="modularity_class" title="Modularity Class" type="integer"></attribute>
     </attributes><nodes><node id="20001" label="新能源汽车">
         <attvalues>
-          <attvalue for="modularity_class" value="0"></attvalue>
-        </attvalues>
-        <viz:size value="30"></viz:size>
-      </node><node id="20002" label="车身">
-        <attvalues>
-          <attvalue for="modularity_class" value="3"></attvalue>
-        </attvalues>
-        <viz:size value="30"></viz:size>
-      </node><node id="20003" label="新能源汽车动力系统">
-        <attvalues>
           <attvalue for="modularity_class" value="6"></attvalue>
         </attvalues>
-        <viz:size value="30"></viz:size>
-      </node><node id="20004" label="锂动力电池">
+        <viz:size value="26"></viz:size>
+      </node><node id="20002" label="车身">
         <attvalues>
           <attvalue for="modularity_class" value="1"></attvalue>
         </attvalues>
-        <viz:size value="30"></viz:size>
-      </node>
-      <node id="20005" label="燃料电池">
-              <attvalues>
-                <attvalue for="modularity_class" value="2"></attvalue>
-              </attvalues>
-              <viz:size value="30"></viz:size>
-      </node>
-      <node id="20006" label="底盘">
-              <attvalues>
-                <attvalue for="modularity_class" value="7"></attvalue>
-              </attvalues>
-              <viz:size value="30"></viz:size>
-      </node>
-      </nodes><edges>
-      <edge source="20001" target="20002"><attvalues></attvalues></edge>
-      <edge source="20001" target="20003><attvalues></attvalues></edge>
-      <edge source="20001" target="20006"><attvalues></attvalues></edge>
-      <edge source="20003" target="20004"><attvalues></attvalues></edge>
-      <edge source="20003" target="20005"><attvalues></attvalues></edge>
-      </edges>  </graph>
+        <viz:size value="25"></viz:size>
+      </node><node id="20003" label="新能源汽车动力系统">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="35"></viz:size>
+      </node><node id="20004" label="锂动力电池">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node><node id="20005" label="燃料电池">
+        <attvalues>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="33"></viz:size>
+      </node><node id="20006" label="底盘">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="22"></viz:size>
+      </node></nodes><edges><edge source="20001" target="20002">
+        <attvalues></attvalues>
+      </edge><edge source="20001" target="20003">
+        <attvalues></attvalues>
+      </edge><edge source="20001" target="20006">
+        <attvalues></attvalues>
+      </edge><edge source="20003" target="20004">
+        <attvalues></attvalues>
+      </edge><edge source="20003" target="20005">
+        <attvalues></attvalues>
+      </edge></edges>  </graph>
 </gexf>
