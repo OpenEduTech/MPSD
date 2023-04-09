@@ -11,11 +11,11 @@ public class GraphData {
     public GraphData(List<Node> nodes, List<Edge> edges) {
         this.nodes = nodes;
         this.links = edges;
-        this.categories.add(new Category("药剂"));
-        this.categories.add(new Category("草药"));
-        this.categories.add(new Category("病症"));
-        this.categories.add(new Category("典籍"));
-        this.categories.add(new Category("地理位置"));
+
+        this.categories.add(new Category("产品"));
+        this.categories.add(new Category("产业"));
+        this.categories.add(new Category("公司"));
+
     }
 
     public List<Node> getNodes() {

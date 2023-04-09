@@ -45,31 +45,26 @@ main .slide{
     transition:padding 0.2s linear;
 }
 
-.abbreviation #prescription-zoom{
-    background: url("https://dhh-1301733196.cos.ap-nanjing.myqcloud.com/tcm/prescription.png") no-repeat center;
+.abbreviation #company-zoom{
+    background: url("../images/prescription.png") no-repeat center;
     background-size: contain;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
 
-.abbreviation #herb-zoom{
-    background: url("https://dhh-1301733196.cos.ap-nanjing.myqcloud.com/tcm/herb.png") no-repeat center;
+.abbreviation #industry-zoom{
+    background: url("../images/herb.png") no-repeat center;
     background-size: contain;
 }
 
-.abbreviation #book-zoom{
-    background: url("https://dhh-1301733196.cos.ap-nanjing.myqcloud.com/tcm/book.png") no-repeat center;
+.abbreviation #product-zoom{
+    background: url("../images/book.png") no-repeat center;
     background-size: contain;
 }
 
 .abbreviation #disease-zoom{
-    background: url("https://dhh-1301733196.cos.ap-nanjing.myqcloud.com/tcm/disease.png") no-repeat center;
-    background-size: contain;
-}
-
-.abbreviation #geography-zoom{
-    background: url("https://dhh-1301733196.cos.ap-nanjing.myqcloud.com/tcm/geography.png") no-repeat center;
+    background: url("../images/disease.png") no-repeat center;
     background-size: contain;
 }
 
@@ -88,7 +83,7 @@ main .slide{
     user-select:none;
 }
 
-.abbreviation #prescription-zoom p{
+.abbreviation #industry-zoom p{
     color: #000;
 }
 

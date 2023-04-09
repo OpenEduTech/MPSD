@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2014-01-30">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="modularity_class" title="Modularity Class" type="integer"></attribute>
+    </attributes><nodes><node id="10001" label="特斯拉">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="26"></viz:size>
+      </node><node id="10002" label="比亚迪">
+        <attvalues>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="25"></viz:size>
+      </node><node id="10003" label="吉利">
+        <attvalues>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="35"></viz:size>
+      </node><node id="10004" label="理想">
+        <attvalues>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="21"></viz:size>
+      </node></nodes><edges><edge source="10001" target="10002">
+        <attvalues></attvalues>
+      </edge><edge source="10001" target="10003">
+        <attvalues></attvalues>
+      </edge><edge source="10001" target="10004">
+        <attvalues></attvalues>
+      </edge><edge source="10002" target="10003">
+        <attvalues></attvalues>
+      </edge><edge source="10002" target="10004">
+        <attvalues></attvalues>
+      </edge><edge source="10003" target="10004">
+        <attvalues></attvalues>
+      </edge></edges>  </graph>
+</gexf>

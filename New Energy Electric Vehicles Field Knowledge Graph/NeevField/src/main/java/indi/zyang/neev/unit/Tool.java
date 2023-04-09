@@ -17,16 +17,16 @@ public class Tool {
         return data;
     }
 
-    public static Map<String, Object> formatSearchResult(List<Prescription> prescriptionList, List<Herb> herbList, List<Disease> diseaseList, List<Book> bookList, List<Geography> geographyList, List<HerbInfo> herbInfoList){
-        Map<String, Object> data = new HashMap<>();
-        data.put("prescription", prescriptionList);
-        data.put("herb", herbList);
-        data.put("herbInfo", herbInfoList);
-        data.put("disease", diseaseList);
-        data.put("book", bookList);
-        data.put("geography", geographyList);
-        return data;
-    }
+//    public static Map<String, Object> formatSearchResult(List<Prescription> prescriptionList, List<Herb> herbList, List<Disease> diseaseList, List<Book> bookList, List<Geography> geographyList, List<HerbInfo> herbInfoList){
+//        Map<String, Object> data = new HashMap<>();
+//        data.put("prescription", prescriptionList);
+//        data.put("herb", herbList);
+//        data.put("herbInfo", herbInfoList);
+//        data.put("disease", diseaseList);
+//        data.put("book", bookList);
+//        data.put("geography", geographyList);
+//        return data;
+//    }
 
     public static Map<String, Object> formatSearchReturn(Map<String, Object> searchResult, int count){
         Map<String, Object> data = new HashMap<>();

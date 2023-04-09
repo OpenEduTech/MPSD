@@ -1,0 +1,26 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http:mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="indi.zyang.neev.dao.CompanyMapper">
+    <resultMap id="companyMapper" type="indi.zyang.neev.entity.Company">
+        <id property="comId" column="comId"/>
+    </resultMap>
+    <select id="findCompanyByComId" resultMap="companyMapper">
+        select * from company where comId = #{comId}
+    </select>
+
+    <select id="findCptCompanyByComId" resultMap="companyMapper">
+        select * from company
+        where comId in (select cptComId from com_com_r where comId = #{comId})
+    </select>
+
+    <select id="findCompanyByProId" resultMap="companyMapper">
+        select * from company
+        where comId in (select comId from com_pro_r where proId = #{proId})
+    </select>
+
+    <select id="findCompanyByIndId" resultMap="companyMapper">
+        select * from company
+        where comId in (select comId from com_ind_r where indId = #{indId})
+    </select>
+</mapper>

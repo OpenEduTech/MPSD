@@ -4,6 +4,7 @@ function canvas(dom, file, path, item) {
     option = null;
     myChart.showLoading();
     $.get(file, function (xml) {
+        console.log
         myChart.hideLoading();
         var graph = echarts.dataTool.gexf.parse(xml);
         var categories = [];
@@ -72,37 +73,26 @@ function canvas(dom, file, path, item) {
         myChart.on('click', function(params){
             let dataType = params.dataType;
             if (dataType == "node"){
-                if (item == "geography"){
-                    let geographyName = params.data.name;
-                    overlayer(geographyName);
-                    $(".geography-layer").css("height", "100%");
-                }else {
-                    $(location).attr('href', path);
-                    window.localStorage.setItem("item", item);
-                    window.localStorage.setItem("id", params.data.id);
-                }
+                $(location).attr('href', path);
+                window.localStorage.setItem("item", item);
+                window.localStorage.setItem("id", params.data.id);
             }
         });
-    }, 'xml');;
+    } , 'xml');;
+
     if (option && typeof option === "object") {
         myChart.setOption(option, true);
     }
 }
 
-const prescriptionDom = document.getElementById("prescription");
-canvas(prescriptionDom, '/file/prescription.gexf', "/tcm/info", "prescription");
+const companyDom = document.getElementById("company");
+canvas(companyDom, '/file/company.gexf', "/tcm/info", "company");
 
-const herbDom = document.getElementById("herb");
-canvas(herbDom, '/file/herb.gexf', "/tcm/info", "herb");
+const industryDom = document.getElementById("industry");
+canvas(industryDom, '/file/industry.gexf', "/tcm/info", "industry");
 
-const bookDom = document.getElementById("book");
-canvas(bookDom, '/file/book.gexf',"/tcm/info", "book");
-
-const diseaseDom = document.getElementById("disease");
-canvas(diseaseDom, '/file/disease.gexf',"/tcm/info", "disease");
-
-const geographyDom = document.getElementById("geography");
-canvas(geographyDom, '/file/geography.gexf',"/tcm/info", "geography");
+const productDom = document.getElementById("product");
+canvas(productDom, '/file/product.gexf', "/tcm/info", "product");
 
 function recovery(gIndex) {
     let num = gIndex + 1;
