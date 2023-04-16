@@ -1,0 +1,17 @@
+name: build
+on:
+  pull_request:
+    branches:
+      - br_team_travel_recommendation
+      - "!main"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install dependencies
+        run: |
+          npm install
+      - name: Run UT tests
+        run: |
+          npm test
