@@ -1,0 +1,17 @@
+{
+    "name": "demo",
+    "version": "0.0.1",
+    "engines": {
+        "java": ">=16"
+    },
+    "private": true,
+    "main": "helloworld.java",
+    "scripts": {
+        "build": "javac --debug 16 main.java",
+        "main": "java main.java"
+    },
+    "dependencies": {
+        "core-js": "^3.8.3",
+        "vue": "^3.2.13"
+    }
+}

@@ -1,17 +1,34 @@
-name: build
+name: Build Check
 on:
   pull_request:
-    branches:
-      - br_team_travel_recommendation
-      - "!main"
+    branches: [ br_team_travel_recommendation ]
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Install dependencies
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: '16'
+          distribution: 'adopt'
+      - name: Set up C++
+        run: sudo apt-get update && sudo apt-get install -y build-essential libgflags-dev
+      - name: Build
         run: |
+          cd frontend
           npm install
-      - name: Run UT tests
-        run: |
-          npm test
+          npm run main
+          npm run build
+          cd ../python
+          pip install -r requirements.txt
+          python main.py
+          cd ../cxx
+          mkdir build && cd build
+          cmake .. && make -j
+          ./demo

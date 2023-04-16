@@ -1,0 +1,11 @@
+prefix=/home/hu/Desktop/workspace/ecnu_class/test_ci/cxx/thirdparty/glog
+exec_prefix=/home/hu/Desktop/workspace/ecnu_class/test_ci/cxx/thirdparty/glog/bin
+libdir=/home/hu/Desktop/workspace/ecnu_class/test_ci/cxx/thirdparty/glog/lib
+includedir=/home/hu/Desktop/workspace/ecnu_class/test_ci/cxx/thirdparty/glog/include
+
+Name: libglog
+Description: Google Log (glog) C++ logging framework
+Version: 0.7.0
+Libs: -L${libdir} -lglog
+Libs.private: -lpthread -lgflags
+Cflags: -I${includedir}
