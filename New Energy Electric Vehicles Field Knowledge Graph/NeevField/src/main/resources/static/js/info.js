@@ -100,6 +100,7 @@ function getData(sendPath) {
     });
 }
 
+//添加节点和关连
 function addData(data) {
     for (let d of data.nodes){
         if (whetherInsertNode(d, graphData)){
@@ -125,6 +126,7 @@ function appendData(data) {
     });
 }
 
+//判断当前节点是否已经存在于GraphData中
 function whetherInsertNode(node, gd) {
     for (let g of gd.nodes){
         if (node.id == g.id){
@@ -214,13 +216,13 @@ function getEnglishCategoryName(category) {
 function getEnglishCategoryNameByChar(category) {
     let categoryName = "";
     switch (category) {
-        case "c":
+        case "com":
             categoryName = "company";
             break;
-        case "i":
+        case "ind":
             categoryName = "industry";
             break;
-        case "p":
+        case "pro":
             categoryName = "product";
             break;
         // case "b":
@@ -258,7 +260,7 @@ function getRelation(source, target, tip) {
     }else if (source.category == 1 && target.category == 0){
         return txt + "具有";
     }else if (source.category == 1 && target.category == 1){
-        return txt + "同游";
+        return txt + "上下游";
     }else if (source.category == 2 && target.category == 0){
         return txt + "归属于";
     }else if (source.category == 2 && target.category == 2){

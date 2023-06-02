@@ -22,7 +22,8 @@ public class IndustryController {
     @ResponseBody
     public Map<String, Object> getIndustryInfo(@PathVariable("id") int indId){
         Industry industry = industryService.findFullIndustryByIndId(indId);
-        GraphData data = industryService.getEChartGraphData(industry);
+//        GraphData data = industryService.getEChartGraphData(industry);
+        GraphData data = industryService.getEChartGraphData();
         return Tool.formatData(industry,data,"industry");
     }
 }
