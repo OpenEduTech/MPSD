@@ -26,4 +26,6 @@ public class IndustryController {
         GraphData data = industryService.getEChartGraphData();
         return Tool.formatData(industry,data,"industry");
     }
+
+    //todo 解决append传入id情况
 }

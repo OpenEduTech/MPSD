@@ -51,6 +51,7 @@ public class IndustryServiceImpl implements IndustryService {
         return industry;
     }
 
+    //todo IndustryDO结构以重构，按照新结构构造新的方法
     @Override
     @Deprecated
     public GraphData getEChartGraphData(Industry industry) {
