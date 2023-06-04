@@ -2,6 +2,7 @@ package indi.zyang.neev.entity;
 
 import org.apache.ibatis.type.Alias;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Alias("industry")
@@ -30,6 +31,13 @@ public class Industry {
     //产业链层级
     private int indLevel;
 
+    private int levelKey;
+
+    private int upLevelKey;
+
+    //产业市值(单位/亿)
+    private int marketValue;
+
     //产业内公司列表
     private List<Company> companyList;
 
@@ -37,21 +45,8 @@ public class Industry {
     private Description description;
 
     //该产业的上游产业列表
-    private List<Industry> upIndustryList;
+    private List<Industry> upIndustryList = new ArrayList<>();
 
-    //该产业的下游产业列表
-    private List<Industry> downIndustryList;
-
-    //该产业的同游产业列表
-    private List<Industry> industryList;
-
-    public List<Industry> getIndustryList() {
-        return industryList;
-    }
-
-    public void setIndustryList(List<Industry> industryList) {
-        this.industryList = industryList;
-    }
 
     public int getIndLevel() {
         return indLevel;
@@ -59,6 +54,22 @@ public class Industry {
 
     public void setIndLevel(int indLevel) {
         this.indLevel = indLevel;
+    }
+
+    public int getLevelKey() {
+        return levelKey;
+    }
+
+    public void setLevelKey(int levelKey) {
+        this.levelKey = levelKey;
+    }
+
+    public int getUpLevelKey() {
+        return upLevelKey;
+    }
+
+    public void setUpLevelKey(int upLevelKey) {
+        this.upLevelKey = upLevelKey;
     }
 
     public int getIndId() {
@@ -101,12 +112,12 @@ public class Industry {
         this.upIndustryList = upIndustryList;
     }
 
-    public List<Industry> getDownIndustryList() {
-        return downIndustryList;
+    public int getMarketValue() {
+        return marketValue;
     }
 
-    public void setDownIndustryList(List<Industry> downIndustryList) {
-        this.downIndustryList = downIndustryList;
+    public void setMarketValue(int marketValue) {
+        this.marketValue = marketValue;
     }
 
     public int getCategory() {return 1;}

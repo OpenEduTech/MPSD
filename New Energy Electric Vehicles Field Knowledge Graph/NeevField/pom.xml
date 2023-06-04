@@ -4,7 +4,7 @@
   <groupId>indi.zyang</groupId>
   <artifactId>NeevField</artifactId>
   <packaging>war</packaging>
-  <version>1.0-SNAPSHOT</version>
+  <version>0.10.2-SNAPSHOT</version>
   <name>NeevField</name>
   <description>New Energy Electric Vehicles Field Knowledge Graph</description>
 

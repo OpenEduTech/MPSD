@@ -29,4 +29,8 @@
         select * from industry
         where indId in (select indId from com_ind_r where comId = #{comId})
     </select>
+
+    <select id="findAllIndustry" resultMap="industryMapper">
+        select * from industry
+    </select>
 </mapper>

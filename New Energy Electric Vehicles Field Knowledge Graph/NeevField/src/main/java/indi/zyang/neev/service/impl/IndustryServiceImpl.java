@@ -15,7 +15,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @Service
 public class IndustryServiceImpl implements IndustryService {
@@ -38,42 +40,49 @@ public class IndustryServiceImpl implements IndustryService {
         Industry industry = industryMapper.findIndustryByIndId(indId);
         Description description = descriptionMapper.findDescriptionByDesId(indId);
         List<Company> companyList = companyMapper.findCompanyByIndId(indId);
-        List<Industry> upIndustryList = industryMapper.findIndustryByUpIndLevel(indId);
-        List<Industry> downIndustryList = industryMapper.findIndustryByDownIndLevel(indId);
-        List<Industry> industryList = industryMapper.findIndustryByIndLevel(indId);
         industry.setDescription(description);
         industry.setCompanyList(companyList);
-        industry.setUpIndustryList(upIndustryList);
-        industry.setDownIndustryList(downIndustryList);
-        industry.setIndustryList(industryList);
         return industry;
     }
 
+    //todo IndustryDO结构以重构，按照新结构构造新的方法
     @Override
+    @Deprecated
     public GraphData getEChartGraphData(Industry industry) {
         List<Node> nodes = new ArrayList<>();
         List<Edge> edges = new ArrayList<>();
         List<Company> companyList = industry.getCompanyList();
-        List<Industry> upIndustryList = industry.getUpIndustryList();
-        List<Industry> downIndustryList = industry.getDownIndustryList();
-        List<Industry> industryList = industry.getIndustryList();
 
-        nodes.add(Tool.buildNode(industry.getStringIndId(),industry.getIndName(),industry.getCategory()));
         for(Company company : companyList){
             nodes.add(Tool.buildNode(company.getStringComId(),company.getComName(),company.getCategory()));
             edges.add(Tool.buildEdge(company.getStringComId(),industry.getStringIndId()));
         }
-        for(Industry upIndustry : upIndustryList){
-            nodes.add(Tool.buildNode(upIndustry.getStringIndId(),upIndustry.getIndName(),4));
-            edges.add(Tool.buildEdge(upIndustry.getStringIndId(),industry.getStringIndId()));
+        GraphData data = new GraphData(nodes,edges);
+        return data;
+    }
+
+    @Override
+    public GraphData getEChartGraphData() {
+        List<Node> nodes = new ArrayList<>();
+        List<Edge> edges = new ArrayList<>();
+        List<Industry> industryList = industryMapper.findAllIndustry();
+        //build Nodes
+        for (Industry industryNode : industryList){
+            int size = Tool.convertMarketValueToNodeSize(industryNode.getMarketValue(),100);
+            nodes.add(Tool.buildNodeWithFeature(industryNode.getStringIndId(),industryNode.getIndName(),industryNode.getCategory(),size));
         }
-        for(Industry downIndustry : downIndustryList){
-            nodes.add(Tool.buildNode(downIndustry.getStringIndId(),downIndustry.getIndName(),3));
-            edges.add(Tool.buildEdge(downIndustry.getStringIndId(),industry.getStringIndId()));
-        }
-        for(Industry midIndustry : industryList){
-            nodes.add(Tool.buildNode(midIndustry.getStringIndId(),midIndustry.getIndName(),midIndustry.getCategory()));
-            edges.add(Tool.buildEdge(midIndustry.getStringIndId(),industry.getStringIndId()));
+        for (Industry industry : industryList){
+            for (Industry upIndustry : industryList){
+                if(industry.getIndLevel()+1 == upIndustry.getIndLevel()){
+                    if (industry.getUpLevelKey() == upIndustry.getLevelKey()){
+                        industry.getUpIndustryList().add(upIndustry);
+                    }
+                }
+            }
+            //build Edges
+            for (Industry upIndustry : industry.getUpIndustryList()){
+                edges.add(Tool.buildEdge(upIndustry.getStringIndId(),industry.getStringIndId()));
+            }
         }
         GraphData data = new GraphData(nodes,edges);
         return data;

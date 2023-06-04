@@ -30,4 +30,13 @@ public interface IndustryService {
       * @return indi.zyang.neev.unit.GraphData
       */
     GraphData getEChartGraphData(Industry industry);
+
+    /**
+     * @Author Zyang
+     * @Desctription 构建ECharts关系图所需要的数据结构,无参方法
+     * @Date 2023/6/2 9:45
+     * @Param []
+     * @return indi.zyang.neev.unit.GraphData
+     */
+    GraphData getEChartGraphData();
 }

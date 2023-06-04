@@ -22,6 +22,15 @@ public class IndustryController {
     @ResponseBody
     public Map<String, Object> getIndustryInfo(@PathVariable("id") int indId){
         Industry industry = industryService.findFullIndustryByIndId(indId);
+        GraphData data = industryService.getEChartGraphData();
+        return Tool.formatData(industry,data,"industry");
+    }
+
+    //todo 解决append传入id情况
+    @RequestMapping("/append/{id}")
+    @ResponseBody
+    public Map<String, Object> appendIndustryInfo(@PathVariable("id") int indId){
+        Industry industry = industryService.findFullIndustryByIndId(indId);
         GraphData data = industryService.getEChartGraphData(industry);
         return Tool.formatData(industry,data,"industry");
     }

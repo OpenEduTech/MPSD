@@ -70,4 +70,13 @@ public interface IndustryMapper {
       * @return java.util.List<indi.zyang.neev.entity.Industry>
       */
     List<Industry> findIndustryByComId(@Param("comId") int comId);
+
+    /**
+      * @Author Zyang
+      * @Desctription 查询数据库全部Industry
+      * @Date 2023/6/2 9:54
+      * @Param []
+      * @return java.util.List<indi.zyang.neev.entity.Industry>
+      */
+    List<Industry> findAllIndustry();
 }
