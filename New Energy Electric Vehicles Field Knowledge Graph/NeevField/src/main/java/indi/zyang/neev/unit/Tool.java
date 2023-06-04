@@ -41,7 +41,19 @@ public class Tool {
     }
 
     public static Node buildNode(String nodeId, String nodeName, int category){
-        Node node = new Node(nodeId, nodeName, 13.638097333333334, 142.43670600000002, 0.9626298999999999, 20.457146, category);
+        Node node = new Node(nodeId, nodeName, 18, 142.43670600000002, 0.9626298999999999, 20.457146, category);
+        return node;
+    }
+
+    /**
+      * @Author Zyang
+      * @Desctription TODO 制造节点且具有Node特性
+      * @Date 2023/6/4 17:53
+      * @Param [nodeId, nodeName, category]
+      * @return indi.zyang.neev.unit.Node
+      */
+    public static Node buildNodeWithFeature(String nodeId, String nodeName, int category, int size){
+        Node node = new Node(nodeId, nodeName, size, 142.43670600000002, 0.9626298999999999, 20.457146, category);
         return node;
     }
 
@@ -78,5 +90,15 @@ public class Tool {
             ip = request.getRemoteAddr();
         }
         return ip;
+    }
+
+    public static int convertMarketValueToNodeSize(int marketValue,int medianValue){
+        if (medianValue == 0){
+            return 18;
+        }
+        double doubleMarketValue = marketValue;
+        double doubleMedianValue = medianValue;
+        int defaultSize = 18;
+        return (int)(defaultSize*(marketValue/medianValue));
     }
 }
