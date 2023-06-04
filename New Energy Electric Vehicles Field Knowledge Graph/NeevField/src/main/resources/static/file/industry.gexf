@@ -37,15 +37,5 @@
           <attvalue for="modularity_class" value="1"></attvalue>
         </attvalues>
         <viz:size value="22"></viz:size>
-      </node></nodes><edges><edge source="20001" target="20002">
-        <attvalues></attvalues>
-      </edge><edge source="20001" target="20003">
-        <attvalues></attvalues>
-      </edge><edge source="20001" target="20006">
-        <attvalues></attvalues>
-      </edge><edge source="20003" target="20004">
-        <attvalues></attvalues>
-      </edge><edge source="20003" target="20005">
-        <attvalues></attvalues>
-      </edge></edges>  </graph>
+      </node></nodes><edges></edges>  </graph>
 </gexf>
