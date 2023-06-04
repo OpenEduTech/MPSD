@@ -297,7 +297,7 @@ function graph(){
     let graph = graphData;
     graph.nodes.forEach(function (node) {
         node.itemStyle = null;
-        node.symbolSize = 18;
+        // node.symbolSize = 18;
         node.value = node.symbolSize;
         node.x = node.y = null;
         node.draggable = true;
@@ -402,8 +402,14 @@ function graph(){
                     let nId = params.data.id.match(/[0-9]+/g);
                     let itemChar = params.data.id.match(/[a-z]+/ig);
                     let item = getEnglishCategoryNameByChar(itemChar[0]);
-                    let sendPath = "/" + item + "/" + nId;
-                    getData(sendPath);
+                    // todo 后期删除此逻辑分支
+                    if(item == "industry"){
+                        let sendPath = "/" + item + "/append/" + nId;
+                        getData(sendPath);
+                    }else{
+                        let sendPath = "/" + item + "/" + nId;
+                        getData(sendPath);
+                    }
                 }
             }
         }
