@@ -92,6 +92,13 @@ public class Tool {
         return ip;
     }
 
+    /**
+      * @Author Zyang
+      * @Desctription 将市值大小按照中位medianValue成比例缩放，默认值为100亿，默认Node大小为18
+      * @Date 2023/6/5 17:37
+      * @Param [marketValue, medianValue]
+      * @return int
+      */
     public static int convertMarketValueToNodeSize(int marketValue,int medianValue){
         if (medianValue == 0){
             return 18;
