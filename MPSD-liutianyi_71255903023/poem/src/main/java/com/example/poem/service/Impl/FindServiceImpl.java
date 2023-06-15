@@ -57,7 +57,7 @@ public class FindServiceImpl implements FindService {
 
             if (Objects.nonNull(poemDto.getKeyWord())){
                 keyWord = poemDto.getKeyWord();
-                queryWrapper.like(Songci::getTitle,keyWord);
+                queryWrapper.like(Songci::getTitle,keyWord).or().like(Songci::getAuthor,keyWord);
             }
 
             Page<Songci> page = new Page(poemDto.getPageNum(), poemDto.getPageSize());
@@ -72,7 +72,7 @@ public class FindServiceImpl implements FindService {
 
             if (Objects.nonNull(poemDto.getKeyWord())){
                 keyWord = poemDto.getKeyWord();
-                queryWrapper.like(Songshi::getTitle,keyWord);
+                queryWrapper.like(Songshi::getTitle,keyWord).or().like(Songshi::getAuthor,keyWord);
             }
 
             Page<Songshi> page = new Page(poemDto.getPageNum(), poemDto.getPageSize());
@@ -86,7 +86,7 @@ public class FindServiceImpl implements FindService {
 
             if (Objects.nonNull(poemDto.getKeyWord())){
                 keyWord = poemDto.getKeyWord();
-                queryWrapper.like(Tangshi::getTitle,keyWord);
+                queryWrapper.like(Tangshi::getTitle,keyWord).or().like(Tangshi::getAuthor,keyWord);
             }
 
             Page<Tangshi> page = new Page(poemDto.getPageNum(), poemDto.getPageSize());
@@ -100,7 +100,7 @@ public class FindServiceImpl implements FindService {
 
             if (Objects.nonNull(poemDto.getKeyWord())){
                 keyWord = poemDto.getKeyWord();
-                queryWrapper.like(Yuanqu::getTitle,keyWord);
+                queryWrapper.like(Yuanqu::getTitle,keyWord).or().like(Yuanqu::getAuthor,keyWord);
             }
 
             Page<Yuanqu> page = new Page(poemDto.getPageNum(), poemDto.getPageSize());
