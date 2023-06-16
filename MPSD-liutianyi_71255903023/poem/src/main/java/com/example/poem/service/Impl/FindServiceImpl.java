@@ -227,7 +227,7 @@ public class FindServiceImpl implements FindService {
         Map<Object, Long> titleMap = new LinkedHashMap<>();
         if (poemEnum.equals(PoemEnum.SONGCI)){
             List<Map<String, Object>> titleList = songciMapper.selectMaps(new QueryWrapper<Songci>().select("author", "count(*) as cnt")
-                    .groupBy("author").orderByDesc("cnt").last("limit 5"));
+                    .groupBy("author").orderByDesc("cnt").last("limit 5").ne("author", "无名氏").isNotNull("author"));
 
             for (Map<String, Object> map : titleList) {
                 Object title = map.get("author");
@@ -237,7 +237,7 @@ public class FindServiceImpl implements FindService {
         }
         else if (poemEnum.equals(PoemEnum.SONGSHI)){
             List<Map<String, Object>> AtitleList = songshiMapper.selectMaps(new QueryWrapper<Songshi>().select("author", "count(*) as cnt")
-                    .groupBy("author").orderByDesc("cnt").last("limit 5"));
+                    .groupBy("author").orderByDesc("cnt").last("limit 5").ne("author", "无名氏").isNotNull("author"));
 
             for (Map<String, Object> map : AtitleList) {
                 Object title = map.get("author");
@@ -247,7 +247,7 @@ public class FindServiceImpl implements FindService {
         }
         else if (poemEnum.equals(PoemEnum.TANGSHI)){
             List<Map<String, Object>> BtitleList = tangshiMapper.selectMaps(new QueryWrapper<Tangshi>().select("author", "count(*) as cnt")
-                    .groupBy("author").orderByDesc("cnt").last("limit 5"));
+                    .groupBy("author").orderByDesc("cnt").last("limit 5").ne("author", "无名氏").isNotNull("author"));
 
             for (Map<String, Object> map : BtitleList) {
                 Object title = map.get("author");
@@ -257,7 +257,7 @@ public class FindServiceImpl implements FindService {
         }
         else if (poemEnum.equals(PoemEnum.YUANQU)){
             List<Map<String, Object>> CtitleList = yuanquMapper.selectMaps(new QueryWrapper<Yuanqu>().select("author", "count(*) as cnt")
-                    .groupBy("author").orderByDesc("cnt").last("limit 5"));
+                    .groupBy("author").orderByDesc("cnt").last("limit 5").ne("author", "无名氏").isNotNull("author"));
 
             for (Map<String, Object> map : CtitleList) {
                 Object title = map.get("author");
