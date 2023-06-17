@@ -3,17 +3,21 @@ package com.example.poem.controller;
 
 import com.example.poem.Dto.PoemDto;
 import com.example.poem.Dto.StarDto;
+import com.example.poem.Dto.WordCloudDto;
 import com.example.poem.Vo.StarVo;
+import com.example.poem.Vo.WordCloudVo;
 import com.example.poem.commonresponse.CommonResponse;
 import com.example.poem.enums.PoemEnum;
 import com.example.poem.pojo.AuthorsInfo;
 import com.example.poem.service.FindService;
+import com.example.poem.utils.Base64Util;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.constraints.NotNull;
+import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 
@@ -61,5 +65,22 @@ public class poemController {
     public CommonResponse<Map<Object, Long>> getQuantity(PoemEnum poemEnum){
         Map<Object, Long> quantity = findService.getQuantity(poemEnum);
         return CommonResponse.success(quantity,"查询成功");
+    }
+
+    @GetMapping("/query/wordCloud")
+    @ApiOperation("查询作者词云")
+    public CommonResponse<WordCloudVo> getWordCloud(WordCloudDto dto){
+        String wordCloud = null;
+        try {
+            wordCloud = findService.generateAuthorWordCloud(dto);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String code = Base64Util.ImageToBase64(wordCloud);
+        WordCloudVo wordCloudVo = new WordCloudVo();
+        wordCloudVo.setName(dto.getName());
+        wordCloudVo.setType(dto.getPoemEnum().getType());
+        wordCloudVo.setImage(code);
+        return CommonResponse.success(wordCloudVo);
     }
 }

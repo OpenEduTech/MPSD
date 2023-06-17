@@ -6,6 +6,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.example.poem.Dto.PoemDto;
 import com.example.poem.Dto.StarDto;
+import com.example.poem.Dto.WordCloudDto;
 import com.example.poem.Vo.StarVo;
 import com.example.poem.commonresponse.CommonResponse;
 import com.example.poem.enums.PoemEnum;
@@ -15,9 +16,12 @@ import com.example.poem.mapper.TangshiMapper;
 import com.example.poem.mapper.YuanquMapper;
 import com.example.poem.pojo.*;
 import com.example.poem.service.*;
+import com.example.poem.utils.WordCloudUtil;
+import lombok.val;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -267,6 +271,53 @@ public class FindServiceImpl implements FindService {
         }
 
         return titleMap;
+    }
+
+    @Override
+    public String generateAuthorWordCloud(WordCloudDto dto) throws IOException {
+        String code = null;
+        if (dto.getPoemEnum().equals(PoemEnum.TANGSHI)){
+            LambdaQueryWrapper<Tangshi> queryWrapper = new LambdaQueryWrapper<>();
+            queryWrapper.like(Tangshi::getAuthor,dto.getName());
+            List<Tangshi> tangshiList = tangshiMapper.selectList(queryWrapper);
+            List<String> contents = new ArrayList<>();
+            for (Tangshi tangshi : tangshiList) {
+                contents.add(tangshi.getContent());
+            }
+                code = WordCloudUtil.generate(dto.getName(), contents);
+        }
+        else if(dto.getPoemEnum().equals(PoemEnum.SONGCI)){
+            LambdaQueryWrapper<Songci> queryWrapper2 = new LambdaQueryWrapper<>();
+            queryWrapper2.like(Songci::getAuthor,dto.getName());
+            List<Songci> songciList = songciMapper.selectList(queryWrapper2);
+            List<String> contents = new ArrayList<>();
+            for (Songci songci : songciList) {
+                contents.add(songci.getContent());
+            }
+                code = WordCloudUtil.generate(dto.getName(), contents);
+        }
+        else if(dto.getPoemEnum().equals(PoemEnum.SONGSHI)){
+            LambdaQueryWrapper<Songshi> queryWrapper3 = new LambdaQueryWrapper<>();
+            queryWrapper3.like(Songshi::getAuthor,dto.getName());
+            List<Songshi> songshiList = songshiMapper.selectList(queryWrapper3);
+            List<String> contets = new ArrayList<>();
+            for (Songshi songshi : songshiList) {
+                contets.add(songshi.getContent());
+            }
+            code = WordCloudUtil.generate(dto.getName(),contets);
+
+        }
+        else if(dto.getPoemEnum().equals(PoemEnum.YUANQU)){
+            LambdaQueryWrapper<Yuanqu> queryWrapper4 = new LambdaQueryWrapper<>();
+            queryWrapper4.like(Yuanqu::getAuthor,dto.getName());
+            List<Yuanqu> yuanquList = yuanquMapper.selectList(queryWrapper4);
+            List<String> contets = new ArrayList<>();
+            for (Yuanqu yuanqu : yuanquList) {
+                contets.add(yuanqu.getContent());
+            }
+            code = WordCloudUtil.generate(dto.getName(),contets);
+        }
+        return code;
     }
 
 
