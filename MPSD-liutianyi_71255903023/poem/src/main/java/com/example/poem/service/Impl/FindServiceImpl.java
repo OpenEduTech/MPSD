@@ -290,11 +290,11 @@ public class FindServiceImpl implements FindService {
             LambdaQueryWrapper<Songci> queryWrapper2 = new LambdaQueryWrapper<>();
             queryWrapper2.like(Songci::getAuthor,dto.getName());
             List<Songci> songciList = songciMapper.selectList(queryWrapper2);
-            List<String> contents = new ArrayList<>();
+            List<String> contets = new ArrayList<>();
             for (Songci songci : songciList) {
-                contents.add(songci.getContent());
+                contets.add(songci.getContent());
             }
-                code = WordCloudUtil.generate(dto.getName(), contents);
+            code = WordCloudUtil.generate(dto.getName(),contets);
         }
         else if(dto.getPoemEnum().equals(PoemEnum.SONGSHI)){
             LambdaQueryWrapper<Songshi> queryWrapper3 = new LambdaQueryWrapper<>();
@@ -305,7 +305,6 @@ public class FindServiceImpl implements FindService {
                 contets.add(songshi.getContent());
             }
             code = WordCloudUtil.generate(dto.getName(),contets);
-
         }
         else if(dto.getPoemEnum().equals(PoemEnum.YUANQU)){
             LambdaQueryWrapper<Yuanqu> queryWrapper4 = new LambdaQueryWrapper<>();
