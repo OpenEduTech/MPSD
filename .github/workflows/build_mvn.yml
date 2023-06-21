@@ -1,0 +1,30 @@
+name: Maven Build
+
+on:
+  pull_request:
+    branches:
+      - br_heyuan_ci_for_Tianyi.Liu
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Java
+        uses: actions/setup-java@v2
+        with:
+          java-version: '11'
+
+      - name: Build with Maven
+        run: mvn clean install compile
+
+      # 在这里可以添加其他构建步骤，如运行测试、生成报告等
+
+      - name: Upload build artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: built-artifacts
+          path: target/
