@@ -1,0 +1,13 @@
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightMenu .ant-menu-item-selected {
+    color: #8bc34a !important;
+}
+
+.menu .logo {
+    font-size: 20px;
+}

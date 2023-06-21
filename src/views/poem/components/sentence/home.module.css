@@ -1,0 +1,62 @@
+.home h1{
+  font-size: 36px;
+  padding: 50px 0;
+  text-align: center;
+}
+.auth{
+  text-align: right;
+  margin-top: 10%;
+  font-size: 28px;
+}
+.home h2{
+  display: flex;
+  justify-content: center;
+}
+.home h2 div{
+  padding: 2px 5px;
+  border: 1px solid green;
+  margin: 0 5px;
+  border-radius: 8px;
+  text-align: center;
+}
+.logo{
+  height: 150px;
+  line-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+.cont{
+  padding-top: 10%;
+  height: 300px;
+  width: 800px;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%,-50%);
+}
+.checkout{
+  text-align: center;
+  width: 200px;
+  border: 2px solid green;
+  padding: 5px;
+  margin: 80px auto 0 auto;
+  border-radius: 10px;
+  cursor: pointer;
+  color: green;
+  background-color: #fff;
+  transition: all .5s linear;
+}
+.checkout:hover{
+  transition: all .5s linear;
+  background-color: green;
+  color: #fff;
+}
+.debounce{
+  cursor:default;
+  background-color: #fff !important;
+  color: #ccc !important;
+  border: 2px solid #ccc !important;
+}
