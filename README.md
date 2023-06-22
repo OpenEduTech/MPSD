@@ -1,2 +1,4 @@
-# MPSD
-Projects for Management and Practices of Software Development Course
+# 基于知识图谱的辅助诊疗平台
+
+开发分支
+本项目构建了知识图谱作为数据来源的自动问答平台。该平台的主要功能是正确分析用户提出的多重类型的医学相关问题，在知识图谱中查询问题的精准答案，返回给用户。
