@@ -20,11 +20,12 @@ public class Base64Util {
             e.printStackTrace();
         }
         // 对字节数组Base64编码
-        BASE64Encoder encoder = new BASE64Encoder();
+        // BASE64Encoder encoder = new BASE64Encoder();
         // 返回Base64编码过的字节数组字符串
         String code ;
-        code = "data:image/png;base64,"+ encoder.encode(Objects.requireNonNull(data));
-        System.out.println("词云图片转换Base64:" + encoder.encode(Objects.requireNonNull(data)));
+        code = "data:image/png;base64,"+ Base64.getEncoder().encodeToString(data);
+        // code = "data:image/png;base64,"+ encoder.encode(Objects.requireNonNull(data));
+        // System.out.println("词云图片转换Base64:" + encoder.encode(Objects.requireNonNull(data)));
         return code;
     }
 
