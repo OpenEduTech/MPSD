@@ -1,0 +1,36 @@
+@import '~antd/dist/antd.css';
+
+.rightMenu .ant-menu-item-selected {
+    color: #8bc34a !important;
+}
+
+.rightMenu .ant-menu-item-selected::after {
+    border-bottom-color: #8bc34a !important;
+}
+
+.ant-menu-item:hover::after {
+    border-bottom-color: #8bc34a !important;
+}
+
+.ant-pagination-item-active {
+    border-color: #8bc34a !important;
+}
+
+.ant-pagination-item-active a {
+    color: #8bc34a !important;
+}
+
+.ant-input-search-button {
+    background-color: #8bc34a !important;
+}
+
+.ant-input:focus {
+    border-color: #8bc34a !important;
+    box-shadow: none !important;
+}
+
+
+
+/* body {
+    font-family: serif !important;
+} */

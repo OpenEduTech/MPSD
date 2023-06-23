@@ -1,0 +1,123 @@
+/* @themeColor: #8bc34a; */
+
+.home {
+    margin: 0px 30px;
+    text-align: center;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    cursor: pointer;
+}
+
+.poem {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.poem .title {
+    font-weight: 600;
+    line-height: 2em;
+    margin: 16px 0;
+}
+
+.poem .author {
+    cursor: pointer;
+    font-size: 13px;
+    color: #8bc34a;
+    opacity: .7;
+    line-height: 2em;
+    margin: 13px 0;
+}
+
+.poem .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 600px;
+    padding: 0 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 40px;
+}
+
+.poem .star {
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+    background: #8bc34a;
+    border: 2px solid #8bc34a;
+    text-decoration: none;
+    border-radius: 2px;
+    transition-property: background-color;
+    transition-duration: .2s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.star:hover {
+    background: #fff;
+    color: #8bc34a
+}
+
+.poem::after {
+    content: "";
+    display: block;
+    margin: 40px auto 80px;
+    width: 10%;
+    opacity: .1;
+    height: 2px;
+    background: #8bc34a;
+    text-align: center;
+}
+
+.singleText {
+    margin: 20px 0;
+    letter-spacing: .3em;
+}
+
+.pagination {
+    margin: -30px auto 60px;
+}
+
+.authorInfo {
+    flex: 1 1 auto;
+    font-size: 14px;
+    padding: 16px 0;
+    line-height: 1.5em;
+    text-indent: 2em;
+    overflow-y: auto;
+}
+
+.title2 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.searchBox {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 200px;
+}
+
+.empty {
+    margin-top: 100px;
+}
+
+.descTitle {
+    margin: 20px 0;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.bottom {
+    margin-bottom: 50px;
+}
