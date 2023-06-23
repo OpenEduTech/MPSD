@@ -61,4 +61,6 @@ public interface CompanyMapper {
       * @return java.util.List<indi.zyang.neev.entity.Company>
       */
     List<Company> findCompanyByIndId(@Param("indId") int indId);
+
+    //测试ci
 }
