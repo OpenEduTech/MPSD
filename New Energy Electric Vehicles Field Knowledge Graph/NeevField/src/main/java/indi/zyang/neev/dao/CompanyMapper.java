@@ -62,5 +62,5 @@ public interface CompanyMapper {
       */
     List<Company> findCompanyByIndId(@Param("indId") int indId);
 
-    //cicd
+    //测试ci
 }
