@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Bot</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        :root {
+            --bs-body-bg-rgb: 255, 255, 255;
+            --bs-primary-rgb: 13, 110, 253;
+            --bd-accent-rgb: 255, 228, 132;
+            --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+            --bd-pink-rgb: 214, 51, 132;
+            --border-in-light: 1px solid #dedede;
+            --card-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .05);
+        }
+
+        ::-webkit-scrollbar {
+            --bar-width: 5px;
+            width: var(--bar-width);
+            height: var(--bar-width);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, .1);
+            border-radius: 20px;
+            background-clip: content-box;
+            border: 1px solid transparent;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        .app-container {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* background-color: #e6e6e6 */
+            background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%), radial-gradient(ellipse at top left, rgba(var(--bs-primary-rgb), 0.5), transparent 50%), radial-gradient(ellipse at top right, rgba(var(--bd-accent-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center right, rgba(var(--bd-violet-rgb), 0.5), transparent 50%), radial-gradient(ellipse at center left, rgba(var(--bd-pink-rgb), 0.5), transparent 50%);
+        }
+
+        .app-window {
+            height: 90%;
+            width: 65%;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+        }
+
+        .left-side {
+            width: 30%;
+            overflow: auto; /* 多余的内容出现滚动条 */
+            height: 100%;
+            /* background-image: linear-gradient(135deg, #9e4ef8, #8c00ff); */
+            background-image: linear-gradient(80deg, #bd6bff, #8a5afc);
+            /* background-color: #fcefbf; */
+            background-color: #e7f8ff;
+            /* padding: 20px; */
+            border: 1px solid #cccccc;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding: 20px;
+            color: white;
+        }
+
+        .right-side {
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            height: 100%;
+            background-color: #fcfcfc;
+            border: 1px solid #cccccc;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .chatbot-title {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 14px 20px;
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
+            font-size: large;
+            font-weight: bold;
+        }
+
+        .chatbot-body {
+            padding: 20px 20px 40px;
+            position: relative;
+            flex: 1 1;
+            overflow: auto;
+        }
+
+        .chatbot-pannel {
+            display: flex;
+            position: relative;
+            width: 100%;
+            padding: 10px 20px 20px;
+            box-sizing: border-box;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border-top: var(--border-in-light);
+            box-shadow: var(--card-shadow);
+        }
+
+        .chatbot-input {
+            height: 100%;
+            width: 100%;
+            border-radius: 10px;
+            border: var(--border-in-light);
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, .03);
+            background-color: white;
+            color: black;
+            font-family: inherit;
+            padding: 10px 90px 10px 14px;
+            resize: none;
+            outline: none;
+            display: inline;
+        }
+
+        .message-left {
+            background-color: #93c5ffbd;
+            color: #333;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            max-width: 80%;
+            transition: all 0.5s ease-in-out;
+            transform-origin: bottom left;
+            float: left;
+            clear: both;
+            word-wrap: break-word;
+            white-space: pre-line;
+        }
+
+        .message-right {
+            background-color: #f8e2a4;
+            color: #333;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            border-radius: 20px;
+            max-width: 80%;
+            transition: all 0.5s ease-in-out;
+            transform-origin: bottom right;
+            float: right;
+            clear: both;
+            word-wrap: break-word;
+        }
+
+        .message-left:hover, .message-right:hover {
+            transform: scale(1.1);
+        }
+
+        .chatbot-send {
+            cursor: pointer;
+            background-color: var(--primary);
+            color: #fff;
+            position: absolute;
+            right: 30px;
+            bottom: 32px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            transition: all .3s ease;
+            overflow: hidden;
+            user-select: none;
+            border: none;
+            box-shadow: none;
+        }
+
+        .chatbot-sent:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+<div class="app-container">
+    <div class="app-window">
+        <div class="left-side">
+            <img src="image/hi-robot.gif" alt="robot" style="width: 60%; display: block; margin: auto;">
+            <div style="padding: 30px 10px; font-size: x-small">
+                <h5>你可以这样问我...</h5>
+                <br>
+                <p>>> 糟了，早上一起来鼻塞了怎么办？</p>
+                <p>>> 浑身酸痛该不会是得什么病了吧？</p>
+                <p>>> 医生，我工作很忙，请问如何预防猝死啊？</p>
+                <p>>> 完了，我的嗅觉丧失了，我该检查什么？</p>
+                <p>>> 喉咙很痛吃什么食物可以缓解？</p>
+                <p>>> 得了食管炎怎么办啊？</p>
+                <p>>> 我想了解一下什么是腱鞘炎？</p>
+                <p>>> 中风的人能吃啥不能吃啥？</p>
+                <p>>> 我有颈椎病，医生您能给我一下建议吗？</p>
+            </div>
+        </div>
+        <div class="right-side">
+            <div class="chatbot-title">
+                欢迎使用医疗问答机器人
+            </div>
+            <div id="chatbox" class="chatbot-body">
+            </div>
+            <div class="chatbot-pannel">
+                <textarea id="inputTxt" class="chatbot-input" placeholder="请输入您的问题，询问格式可参考左侧提示栏。" rows="3"></textarea>
+                <button id="sendBtn" class="chatbot-send">发 送</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+    function animateMessage(element, messageText) {
+        element.innerHTML = '';
+        let i = 0;
+
+        function typing() {
+            if (i < messageText.length) {
+                element.innerHTML += messageText.charAt(i);
+                i++;
+                setTimeout(typing, 50);
+            }
+            $("#chatbox").scrollTop($("#chatbox").prop('scrollHeight'));
+        }
+
+        typing();
+    }
+
+    function addMessage(message, className) {
+        $("<div>" + message + "</div>").addClass(className).appendTo("#chatbox");
+        $("#inputTxt").val("");
+    }
+
+    $("#sendBtn").click(function () {
+        let message = $("#inputTxt").val();
+        if (message.length <= 0) {
+            alert("请先输入消息再发送！")
+            return
+        }
+        addMessage(message, "message-right")
+
+        $.ajax({
+            method: "POST",
+            url: "/api/chatbot",
+            contentType: 'application/json',
+            data: JSON.stringify({message: message}),
+            success: function (response) {
+                addMessage(response, "message-left")
+            },
+            error: function (xhr, textStatus, errorThrown) {
+                addMessage(textStatus, "message-left")
+            }
+        });
+    })
+
+    $(function () {
+
+        const chatbot_body = document.getElementById("chatbox");
+
+        const observer = new MutationObserver(mutations => {
+            mutations.forEach(mutation => {
+                if (mutation.addedNodes.length > 0 && mutation.addedNodes[0].nodeName === "DIV" && mutation.addedNodes[0].className === "message-left") {
+                    animateMessage(mutation.addedNodes[0], mutation.addedNodes[0].innerHTML);
+                }
+            })
+        })
+        observer.observe(chatbot_body, {childList: true})
+
+        addMessage("您好，我是您的医疗助手Tars，请问有什么可以帮到您？", "message-left")
+    })
+</script>
+</body>
+</html>
